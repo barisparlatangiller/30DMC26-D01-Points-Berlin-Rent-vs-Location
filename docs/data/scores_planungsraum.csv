@@ -1,0 +1,543 @@
+bezirk,planungsraum,addresses,with_rent,mean_rent,share_einfach,share_mittel,share_gut,mean_score,share_cheaper,share_as_label,share_pricier
+Charlottenburg-Wilmersdorf,Alt-Lietzow,365,344,7.944,0.0,1.0,0.0,0.244,0.18,0.395,0.424
+Charlottenburg-Wilmersdorf,Amtsgerichtsplatz,445,442,8.611,0.0,0.0,1.0,-0.464,0.464,0.536,0.0
+Charlottenburg-Wilmersdorf,Angerburger Allee,167,120,7.297,0.0,0.593,0.407,-0.525,0.533,0.292,0.175
+Charlottenburg-Wilmersdorf,Babelsberger Straße,342,317,8.426,0.0,0.079,0.921,-0.549,0.442,0.549,0.009
+Charlottenburg-Wilmersdorf,Barstraße,372,318,7.622,0.0,0.892,0.108,-0.226,0.447,0.33,0.223
+Charlottenburg-Wilmersdorf,Binger Straße,381,318,8.024,0.0,0.176,0.824,-0.607,0.528,0.343,0.129
+Charlottenburg-Wilmersdorf,Bismarckallee,983,836,10.096,0.0,0.103,0.897,-0.161,0.196,0.732,0.072
+Charlottenburg-Wilmersdorf,Brabanter Platz,213,206,7.704,0.0,0.953,0.047,-0.058,0.214,0.617,0.17
+Charlottenburg-Wilmersdorf,Branitzer Platz,830,676,8.849,0.001,0.557,0.442,-0.08,0.306,0.425,0.269
+Charlottenburg-Wilmersdorf,Breite Straße,638,584,7.815,0.0,0.0,1.0,-1.045,0.632,0.368,0.0
+Charlottenburg-Wilmersdorf,Breitscheidplatz,307,186,9.846,0.0,0.0,1.0,-0.242,0.22,0.78,0.0
+Charlottenburg-Wilmersdorf,Droysenstraße,185,183,9.403,0.0,0.0,1.0,-0.366,0.333,0.667,0.0
+Charlottenburg-Wilmersdorf,Eichkamp,883,507,9.81,0.0,0.997,0.003,0.686,0.079,0.156,0.765
+Charlottenburg-Wilmersdorf,Eisenzahnstraße,519,429,8.273,0.0,0.669,0.331,-0.193,0.387,0.396,0.217
+Charlottenburg-Wilmersdorf,Ernst-Reuter-Platz,338,217,8.304,0.0,0.604,0.396,-0.313,0.475,0.327,0.198
+Charlottenburg-Wilmersdorf,Flatowallee,396,320,8.66,0.0,1.0,0.0,0.322,0.184,0.309,0.506
+Charlottenburg-Wilmersdorf,Flinsberger Platz,738,711,8.412,0.0,0.141,0.859,-0.606,0.475,0.461,0.063
+Charlottenburg-Wilmersdorf,Forckenbeckstraße,621,524,8.444,0.0,0.167,0.833,-0.767,0.626,0.374,0.0
+Charlottenburg-Wilmersdorf,Fürstenplatz,610,532,8.744,0.0,0.023,0.977,-0.506,0.468,0.53,0.002
+Charlottenburg-Wilmersdorf,George-Grosz-Platz,368,332,9.426,0.0,0.0,1.0,-0.373,0.298,0.702,0.0
+Charlottenburg-Wilmersdorf,Güterbahnhof Grunewald,35,18,8.424,0.0,0.857,0.143,-0.111,0.444,0.0,0.556
+Charlottenburg-Wilmersdorf,Hagenplatz,662,560,10.546,0.0,0.0,1.0,-0.157,0.116,0.884,0.0
+Charlottenburg-Wilmersdorf,Halensee,379,359,8.694,0.0,0.264,0.736,-0.234,0.29,0.649,0.061
+Charlottenburg-Wilmersdorf,Hildegardstraße,279,272,8.102,0.0,0.0,1.0,-0.801,0.643,0.357,0.0
+Charlottenburg-Wilmersdorf,Hindemithplatz,247,241,9.02,0.0,0.0,1.0,-0.469,0.465,0.535,0.0
+Charlottenburg-Wilmersdorf,Hochmeisterplatz,369,352,8.598,0.0,0.003,0.997,-0.446,0.401,0.599,0.0
+Charlottenburg-Wilmersdorf,Hundekehle,690,507,10.218,0.0,0.01,0.99,-0.327,0.187,0.813,0.0
+Charlottenburg-Wilmersdorf,Jungfernheide/Plötzensee,874,638,7.282,1.0,0.0,0.0,0.682,0.0,0.39,0.61
+Charlottenburg-Wilmersdorf,Kaiserin-Augusta-Allee,391,277,7.717,1.0,0.0,0.0,0.856,0.0,0.383,0.617
+Charlottenburg-Wilmersdorf,Karl-August-Platz,500,496,8.955,0.0,0.196,0.804,-0.149,0.246,0.627,0.127
+Charlottenburg-Wilmersdorf,Klausenerplatz,429,424,7.314,0.0,1.0,0.0,-0.292,0.368,0.557,0.075
+Charlottenburg-Wilmersdorf,Kranzallee,680,497,9.559,0.0,0.954,0.046,0.392,0.187,0.219,0.594
+Charlottenburg-Wilmersdorf,Königin-Elisabeth-Straße,376,334,7.339,0.0,0.614,0.386,-0.659,0.62,0.126,0.254
+Charlottenburg-Wilmersdorf,Leon-Jessel-Platz,238,235,8.221,0.0,0.0,1.0,-0.621,0.523,0.477,0.0
+Charlottenburg-Wilmersdorf,Lietzensee,258,246,8.482,0.0,0.035,0.965,-0.573,0.492,0.5,0.008
+Charlottenburg-Wilmersdorf,Ludwigkirchplatz,259,253,8.644,0.0,0.0,1.0,-0.498,0.431,0.569,0.0
+Charlottenburg-Wilmersdorf,Messelpark,429,315,10.418,0.0,0.0,1.0,-0.368,0.257,0.743,0.0
+Charlottenburg-Wilmersdorf,Neu Westend,552,525,8.507,0.0,0.775,0.225,0.198,0.19,0.402,0.408
+Charlottenburg-Wilmersdorf,Nikolsburger Platz,369,369,8.706,0.0,0.0,1.0,-0.428,0.407,0.593,0.0
+Charlottenburg-Wilmersdorf,Olympiagelände,361,256,8.548,0.687,0.313,0.0,1.004,0.141,0.188,0.672
+Charlottenburg-Wilmersdorf,Paul-Hertz-Siedlung,206,197,6.416,1.0,0.0,0.0,0.132,0.0,0.914,0.086
+Charlottenburg-Wilmersdorf,Prager Platz,272,270,8.412,0.0,0.0,1.0,-0.544,0.485,0.515,0.0
+Charlottenburg-Wilmersdorf,Preußenpark,470,461,8.831,0.0,0.006,0.994,-0.412,0.395,0.603,0.002
+Charlottenburg-Wilmersdorf,Richard-Wagner-Straße,548,534,8.217,0.0,1.0,0.0,0.3,0.077,0.547,0.376
+Charlottenburg-Wilmersdorf,Rüdesheimer Platz,673,627,8.232,0.0,0.021,0.979,-0.604,0.456,0.544,0.0
+Charlottenburg-Wilmersdorf,Savignyplatz,413,392,8.927,0.0,0.0,1.0,-0.344,0.306,0.694,0.0
+Charlottenburg-Wilmersdorf,Schaperstraße,437,413,8.757,0.0,0.002,0.998,-0.433,0.373,0.625,0.002
+Charlottenburg-Wilmersdorf,Schlangenbader Straße,227,208,7.501,0.0,0.978,0.022,-0.274,0.428,0.413,0.159
+Charlottenburg-Wilmersdorf,Schlossgarten,148,118,10.402,0.007,0.993,0.0,0.483,0.22,0.076,0.703
+Charlottenburg-Wilmersdorf,Schloßstraße,416,400,7.972,0.0,1.0,0.0,0.11,0.18,0.53,0.29
+Charlottenburg-Wilmersdorf,Spreestadt,256,140,8.704,0.0,1.0,0.0,0.229,0.143,0.486,0.371
+Charlottenburg-Wilmersdorf,Tegeler Weg,442,425,7.697,1.0,0.0,0.0,1.002,0.0,0.254,0.746
+Charlottenburg-Wilmersdorf,Wilhelmsaue,174,165,8.297,0.0,0.0,1.0,-0.636,0.63,0.37,0.0
+Friedrichshain-Kreuzberg,Am Berlin Museum,226,199,8.6,0.947,0.04,0.013,1.457,0.015,0.08,0.905
+Friedrichshain-Kreuzberg,Andreasviertel,312,261,7.57,0.022,0.827,0.151,-0.498,0.617,0.264,0.119
+Friedrichshain-Kreuzberg,Askanischer Platz,309,259,9.278,0.777,0.078,0.146,0.861,0.143,0.193,0.664
+Friedrichshain-Kreuzberg,Barnimkiez,83,72,6.949,0.0,1.0,0.0,-0.681,0.792,0.097,0.111
+Friedrichshain-Kreuzberg,Boxhagener Platz,200,200,9.299,0.0,0.0,1.0,-0.165,0.135,0.865,0.0
+Friedrichshain-Kreuzberg,Chamissokiez,629,578,7.673,0.0,0.409,0.591,-0.618,0.58,0.317,0.104
+Friedrichshain-Kreuzberg,Forckenbeckplatz,186,184,8.507,0.0,0.0,1.0,-0.69,0.5,0.5,0.0
+Friedrichshain-Kreuzberg,Friedenstraße,206,181,8.778,0.0,1.0,0.0,0.21,0.32,0.149,0.53
+Friedrichshain-Kreuzberg,Gleisdreieck,121,96,9.83,0.008,0.992,0.0,0.49,0.042,0.427,0.531
+Friedrichshain-Kreuzberg,Graefekiez Nord,404,403,7.848,0.0,0.946,0.054,-0.055,0.226,0.586,0.189
+Friedrichshain-Kreuzberg,Graefekiez Süd,266,265,7.848,0.0,1.0,0.0,-0.049,0.294,0.46,0.245
+Friedrichshain-Kreuzberg,Hausburgviertel,168,168,8.423,0.0,1.0,0.0,0.393,0.131,0.345,0.524
+Friedrichshain-Kreuzberg,Köpenicker Straße,192,163,7.401,1.0,0.0,0.0,0.632,0.0,0.558,0.442
+Friedrichshain-Kreuzberg,Lausitzer Platz,353,351,7.055,1.0,0.0,0.0,0.544,0.0,0.499,0.501
+Friedrichshain-Kreuzberg,Mehringplatz,322,276,8.115,1.0,0.0,0.0,1.069,0.0,0.388,0.612
+Friedrichshain-Kreuzberg,Moritzplatz,247,198,7.236,1.0,0.0,0.0,0.621,0.0,0.495,0.505
+Friedrichshain-Kreuzberg,Niederbarnimstraße,103,103,10.319,0.0,0.0,1.0,-0.272,0.272,0.728,0.0
+Friedrichshain-Kreuzberg,Oranienplatz,371,357,6.551,1.0,0.0,0.0,0.218,0.0,0.826,0.174
+Friedrichshain-Kreuzberg,Pettenkofer Straße,143,139,9.377,0.0,0.007,0.993,-0.288,0.245,0.755,0.0
+Friedrichshain-Kreuzberg,Prinzenstraße,250,247,7.291,1.0,0.0,0.0,0.806,0.0,0.474,0.526
+Friedrichshain-Kreuzberg,Rathaus Yorckstraße,251,241,7.757,0.0,1.0,0.0,-0.012,0.245,0.523,0.232
+Friedrichshain-Kreuzberg,Reichenberger Straße Ost,308,299,7.822,0.89,0.11,0.0,0.957,0.047,0.264,0.689
+Friedrichshain-Kreuzberg,Reichenberger Straße West,317,299,7.862,1.0,0.0,0.0,1.147,0.0,0.127,0.873
+Friedrichshain-Kreuzberg,Revaler Straße,325,308,9.116,0.0,0.0,1.0,-0.403,0.26,0.74,0.0
+Friedrichshain-Kreuzberg,Richard-Sorge-Viertel,274,270,7.964,0.0,0.299,0.701,-0.544,0.481,0.452,0.067
+Friedrichshain-Kreuzberg,Samariterviertel,271,271,8.784,0.0,0.0,1.0,-0.48,0.373,0.627,0.0
+Friedrichshain-Kreuzberg,Stralauer Halbinsel,306,276,10.497,0.0,0.098,0.902,-0.174,0.185,0.761,0.054
+Friedrichshain-Kreuzberg,Stralauer Kiez,351,263,8.363,0.0,0.88,0.12,0.217,0.232,0.316,0.452
+Friedrichshain-Kreuzberg,Traveplatz,280,271,9.608,0.0,0.214,0.786,-0.151,0.303,0.517,0.181
+Friedrichshain-Kreuzberg,Urbanstraße,525,511,7.911,0.0,0.952,0.048,0.074,0.164,0.597,0.239
+Friedrichshain-Kreuzberg,Viktoriapark,501,489,8.322,0.0,1.0,0.0,0.194,0.139,0.528,0.333
+Friedrichshain-Kreuzberg,Wassertorplatz,147,113,6.918,1.0,0.0,0.0,0.575,0.0,0.566,0.434
+Friedrichshain-Kreuzberg,Weberwiese,244,227,8.198,0.0,0.234,0.766,-0.687,0.568,0.401,0.031
+Friedrichshain-Kreuzberg,Wismarplatz,204,204,9.028,0.0,0.0,1.0,-0.436,0.338,0.662,0.0
+Friedrichshain-Kreuzberg,Wrangelkiez,439,423,7.59,0.501,0.499,0.0,0.381,0.206,0.319,0.475
+Friedrichshain-Kreuzberg,Wriezener Bahnhof,116,27,11.77,0.0,0.172,0.828,0.037,0.185,0.444,0.37
+Lichtenberg,Bornitzstraße,344,171,9.043,0.666,0.334,0.0,0.906,0.105,0.287,0.608
+Lichtenberg,Dolgenseestraße,329,269,6.307,0.699,0.301,0.0,-0.275,0.335,0.628,0.037
+Lichtenberg,Dorf Falkenberg,1112,457,8.475,1.0,0.0,0.0,1.236,0.0,0.289,0.711
+Lichtenberg,Dörfer Malchow-Wartenberg,1211,246,7.183,0.026,0.974,0.0,-0.114,0.366,0.382,0.252
+Lichtenberg,Erieseering,178,136,6.701,0.736,0.264,0.0,-0.059,0.257,0.596,0.147
+Lichtenberg,Falkenberg Ost,242,224,5.895,1.0,0.0,0.0,0.054,0.0,0.946,0.054
+Lichtenberg,Falkenberg West,207,158,5.666,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+Lichtenberg,Fennpfuhl Ost,192,171,6.766,1.0,0.0,0.0,0.281,0.0,0.813,0.187
+Lichtenberg,Fennpfuhlpark,84,59,6.489,0.786,0.214,0.0,-0.22,0.288,0.644,0.068
+Lichtenberg,Frankfurter Allee Süd,126,62,6.711,0.659,0.341,0.0,-0.048,0.258,0.532,0.21
+Lichtenberg,Gensinger Straße,338,216,7.571,1.0,0.0,0.0,0.894,0.0,0.463,0.537
+Lichtenberg,Große-Leege-Straße,389,366,8.015,0.0,1.0,0.0,0.0,0.281,0.437,0.281
+Lichtenberg,Hauptstraße,321,177,6.328,0.308,0.692,0.0,-0.78,0.842,0.096,0.062
+Lichtenberg,Herzbergstraße,414,140,8.319,0.833,0.167,0.0,0.957,0.036,0.229,0.736
+Lichtenberg,Hohenschönhauser Straße,192,152,6.144,1.0,0.0,0.0,0.079,0.0,0.961,0.039
+Lichtenberg,Karlshorst Nord,1642,964,8.192,0.0,0.84,0.16,-0.191,0.46,0.196,0.344
+Lichtenberg,Karlshorst Süd,1131,447,8.327,0.0,0.854,0.146,-0.143,0.347,0.396,0.257
+Lichtenberg,Karlshorst West,717,641,7.882,0.0,0.107,0.893,-0.945,0.722,0.254,0.023
+Lichtenberg,Landsberger Allee,395,360,7.624,0.066,0.934,0.0,-0.094,0.492,0.15,0.358
+Lichtenberg,Malchower Weg,1607,520,8.341,0.991,0.009,0.0,1.081,0.017,0.285,0.698
+Lichtenberg,Massower Straße,174,159,6.977,0.236,0.764,0.0,-0.195,0.591,0.107,0.302
+Lichtenberg,Mühlengrund,164,144,6.024,0.341,0.659,0.0,-0.688,0.708,0.271,0.021
+Lichtenberg,Nibelungenviertel,608,560,8.245,0.0,1.0,0.0,0.059,0.346,0.248,0.405
+Lichtenberg,Nöldnerplatz,188,157,7.48,0.0,1.0,0.0,-0.242,0.433,0.376,0.191
+Lichtenberg,Orankesee,525,362,8.068,0.006,0.994,0.0,0.149,0.218,0.414,0.367
+Lichtenberg,Rathaus Lichtenberg,547,522,7.881,0.0,1.0,0.0,-0.111,0.337,0.437,0.226
+Lichtenberg,Roedeliusplatz,225,216,8.026,0.991,0.009,0.0,1.227,0.0,0.25,0.75
+Lichtenberg,Rosenfelder Ring,234,227,7.594,0.979,0.021,0.0,0.753,0.0,0.392,0.608
+Lichtenberg,Rudolf-Seiffert-Park,133,121,6.509,0.0,1.0,0.0,-0.785,0.868,0.05,0.083
+Lichtenberg,Rummelsburg,645,426,9.409,0.0,1.0,0.0,0.629,0.08,0.211,0.709
+Lichtenberg,Storkower Bogen,116,104,7.08,0.0,1.0,0.0,-0.635,0.635,0.365,0.0
+Lichtenberg,Tierpark,144,130,6.871,0.979,0.021,0.0,0.292,0.0,0.838,0.162
+Lichtenberg,Victoriastadt,211,182,8.421,0.0,1.0,0.0,0.352,0.093,0.462,0.445
+Lichtenberg,Volkradstraße,357,308,6.524,0.0,1.0,0.0,-0.945,0.945,0.055,0.0
+Lichtenberg,Wartenberg Nord,425,366,6.179,0.988,0.012,0.0,0.087,0.0,0.956,0.044
+Lichtenberg,Wartenberg Süd,252,230,6.255,0.694,0.306,0.0,-0.109,0.23,0.657,0.113
+Lichtenberg,Weitlingkiez,654,648,7.386,0.0,1.0,0.0,-0.255,0.435,0.384,0.181
+Lichtenberg,Weiße Taube,686,366,8.765,0.0,1.0,0.0,0.066,0.32,0.295,0.385
+Lichtenberg,Zachertstraße,314,313,7.645,0.0,1.0,0.0,-0.022,0.323,0.377,0.3
+Lichtenberg,Zingster Straße Ost,205,149,5.932,1.0,0.0,0.0,0.181,0.0,0.826,0.174
+Lichtenberg,Zingster Straße West,292,218,6.253,1.0,0.0,0.0,0.138,0.0,0.931,0.069
+Marzahn-Hellersdorf,Adele-Sandrock-Straße,544,511,5.973,0.801,0.199,0.0,-0.114,0.2,0.74,0.061
+Marzahn-Hellersdorf,Ahrensfelder Berge,271,252,5.562,1.0,0.0,0.0,0.036,0.0,0.964,0.036
+Marzahn-Hellersdorf,Alt-Biesdorf,873,299,8.816,0.0,1.0,0.0,0.365,0.117,0.401,0.482
+Marzahn-Hellersdorf,Alt-Kaulsdorf,1042,588,7.784,0.0,1.0,0.0,-0.007,0.257,0.493,0.25
+Marzahn-Hellersdorf,Alt-Mahlsdorf,1321,555,8.396,0.0,0.085,0.915,-0.82,0.577,0.407,0.016
+Marzahn-Hellersdorf,Alt-Marzahn,853,362,7.778,1.0,0.0,0.0,0.928,0.0,0.343,0.657
+Marzahn-Hellersdorf,Am Kienberg,244,229,5.488,0.639,0.361,0.0,-0.362,0.362,0.638,0.0
+Marzahn-Hellersdorf,Auersbergstraße,233,180,5.931,0.991,0.009,0.0,0.233,0.0,0.867,0.133
+Marzahn-Hellersdorf,Biesdorf Süd,3861,1159,8.792,0.0,1.0,0.0,0.439,0.17,0.221,0.609
+Marzahn-Hellersdorf,Boulevard Kastanienallee,346,333,6.908,1.0,0.0,0.0,0.381,0.0,0.787,0.213
+Marzahn-Hellersdorf,Buckower Ring,601,281,7.358,0.759,0.241,0.0,0.338,0.217,0.352,0.431
+Marzahn-Hellersdorf,Bärenstein,276,205,5.225,0.928,0.072,0.0,0.029,0.098,0.79,0.112
+Marzahn-Hellersdorf,Böhlener Straße,286,270,6.288,1.0,0.0,0.0,0.022,0.0,0.978,0.022
+Marzahn-Hellersdorf,Bürgerpark,235,212,6.318,1.0,0.0,0.0,0.146,0.0,0.873,0.127
+Marzahn-Hellersdorf,Cecilienplatz,261,256,5.671,0.0,1.0,0.0,-1.0,1.0,0.0,0.0
+Marzahn-Hellersdorf,Elsensee,1904,647,8.973,0.0,0.105,0.895,-0.507,0.428,0.546,0.026
+Marzahn-Hellersdorf,Gewerbegebiet Bitterfelder Straße,151,3,10.64,1.0,0.0,0.0,2.0,0.0,0.0,1.0
+Marzahn-Hellersdorf,Golliner Straße,226,211,5.965,1.0,0.0,0.0,0.005,0.0,0.995,0.005
+Marzahn-Hellersdorf,Gut Hellersdorf,476,417,6.075,0.973,0.027,0.0,0.024,0.029,0.93,0.041
+Marzahn-Hellersdorf,Havelländer Ring,125,123,7.559,0.992,0.008,0.0,0.854,0.0,0.26,0.74
+Marzahn-Hellersdorf,Helle Mitte,118,91,7.753,0.0,1.0,0.0,-0.022,0.088,0.846,0.066
+Marzahn-Hellersdorf,Hellersdorfer Promenade,268,263,6.565,0.922,0.078,0.0,-0.004,0.053,0.897,0.049
+Marzahn-Hellersdorf,Kaulsdorf Nord,2050,788,7.711,0.0,1.0,0.0,-0.072,0.386,0.301,0.313
+Marzahn-Hellersdorf,Kaulsdorf Süd,2512,543,7.984,0.0,1.0,0.0,0.041,0.278,0.403,0.319
+Marzahn-Hellersdorf,Kyritzer Straße,348,323,6.696,1.0,0.0,0.0,0.226,0.0,0.839,0.161
+Marzahn-Hellersdorf,Landsberger Tor,221,209,6.935,0.009,0.991,0.0,-0.627,0.77,0.086,0.144
+Marzahn-Hellersdorf,Lea-Grundig-Straße,379,240,6.324,1.0,0.0,0.0,0.212,0.0,0.858,0.142
+Marzahn-Hellersdorf,Mahlsdorf Nord,3189,982,8.548,0.0,0.554,0.446,-0.404,0.451,0.375,0.174
+Marzahn-Hellersdorf,Marzahn West,393,318,5.824,1.0,0.0,0.0,0.069,0.0,0.956,0.044
+Marzahn-Hellersdorf,Marzahner Chaussee,995,271,7.452,0.009,0.991,0.0,-0.295,0.506,0.284,0.21
+Marzahn-Hellersdorf,Marzahner Promenade,264,238,5.687,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+Marzahn-Hellersdorf,Neue Grottkauer Straße,258,244,5.628,0.992,0.008,0.0,0.004,0.0,0.996,0.004
+Marzahn-Hellersdorf,Oberfeldstraße,2097,895,8.275,0.0,1.0,0.0,0.238,0.23,0.302,0.468
+Marzahn-Hellersdorf,Pilgramer Straße,3272,1009,7.98,0.0,0.01,0.99,-0.855,0.611,0.383,0.006
+Marzahn-Hellersdorf,Rosenbecker Straße,138,122,6.095,1.0,0.0,0.0,0.131,0.0,0.934,0.066
+Marzahn-Hellersdorf,Schleipfuhl,262,226,5.658,0.92,0.08,0.0,-0.044,0.044,0.956,0.0
+Marzahn-Hellersdorf,Springpfuhl,325,289,5.971,0.046,0.954,0.0,-0.882,0.893,0.097,0.01
+Marzahn-Hellersdorf,Teterower Ring,475,428,5.76,0.0,1.0,0.0,-0.918,0.928,0.063,0.009
+Marzahn-Hellersdorf,Wittenberger Straße,249,225,5.641,1.0,0.0,0.0,0.036,0.0,0.964,0.036
+Marzahn-Hellersdorf,Wuhletalstraße,302,289,5.861,1.0,0.0,0.0,0.003,0.0,0.997,0.003
+Marzahn-Hellersdorf,Zossener Straße,199,162,6.045,1.0,0.0,0.0,0.105,0.0,0.907,0.093
+Mitte,Afrikanische Straße,677,639,7.14,1.0,0.0,0.0,0.56,0.0,0.507,0.493
+Mitte,Alexanderplatzviertel,474,384,8.638,0.0,0.0,1.0,-0.659,0.5,0.5,0.0
+Mitte,Antonstraße,271,270,7.341,1.0,0.0,0.0,0.641,0.0,0.43,0.57
+Mitte,Arkonaplatz,509,509,9.705,0.0,0.0,1.0,-0.126,0.114,0.886,0.0
+Mitte,Beusselkiez,208,207,8.558,1.0,0.0,0.0,1.271,0.0,0.053,0.947
+Mitte,Bremer Straße,370,368,7.861,0.1,0.9,0.0,0.024,0.166,0.644,0.19
+Mitte,Brunnenstraße,457,452,7.451,1.0,0.0,0.0,0.549,0.0,0.608,0.392
+Mitte,Charitéviertel,634,537,11.387,0.0,0.079,0.921,-0.169,0.142,0.791,0.067
+Mitte,Drontheimer Straße,280,257,7.451,1.0,0.0,0.0,0.732,0.0,0.389,0.611
+Mitte,Elberfelder Straße,411,408,8.028,0.0,0.769,0.231,-0.034,0.228,0.564,0.208
+Mitte,Emdener Straße,299,299,7.846,1.0,0.0,0.0,1.067,0.0,0.14,0.86
+Mitte,Gesundbrunnen,403,398,7.385,1.0,0.0,0.0,0.528,0.0,0.533,0.467
+Mitte,Glasgower Straße,240,238,7.061,1.0,0.0,0.0,0.445,0.0,0.609,0.391
+Mitte,Großer Tiergarten,269,70,11.401,0.0,0.026,0.974,-0.529,0.414,0.586,0.0
+Mitte,Hansaviertel,229,202,9.239,0.0,0.328,0.672,-0.208,0.376,0.426,0.198
+Mitte,Heidestraße,298,220,13.153,0.0,0.477,0.523,0.059,0.223,0.495,0.282
+Mitte,Heine-Viertel Ost,462,429,9.182,0.039,0.444,0.517,-0.177,0.385,0.275,0.34
+Mitte,Heine-Viertel West,368,339,9.05,0.06,0.0,0.94,-0.661,0.469,0.478,0.053
+Mitte,Humboldthain Nordwest,541,488,7.842,1.0,0.0,0.0,0.9,0.0,0.357,0.643
+Mitte,Humboldthain Süd,386,357,6.551,1.0,0.0,0.0,0.21,0.0,0.812,0.188
+Mitte,Huttenkiez,285,157,7.895,1.0,0.0,0.0,1.242,0.0,0.102,0.898
+Mitte,Invalidenstraße,636,614,9.534,0.0,0.0,1.0,-0.331,0.267,0.733,0.0
+Mitte,Kameruner Straße,390,349,7.551,1.0,0.0,0.0,0.903,0.0,0.212,0.788
+Mitte,Karl-Marx-Allee,251,231,6.859,0.669,0.263,0.068,-0.022,0.312,0.485,0.203
+Mitte,Koloniestraße,392,335,7.719,1.0,0.0,0.0,0.767,0.0,0.388,0.612
+Mitte,Körnerstraße,223,196,8.799,0.0,1.0,0.0,0.199,0.245,0.311,0.444
+Mitte,Leipziger Straße,456,371,11.405,0.0,0.0,1.0,-0.507,0.288,0.712,0.0
+Mitte,Leopoldplatz,281,277,7.626,1.0,0.0,0.0,0.942,0.0,0.271,0.729
+Mitte,Londoner Straße,250,230,7.317,1.0,0.0,0.0,0.813,0.0,0.343,0.657
+Mitte,Lübecker Straße,256,249,7.303,1.0,0.0,0.0,0.695,0.0,0.378,0.622
+Mitte,Lüneburger Straße,171,140,9.792,0.0,0.754,0.246,0.343,0.071,0.514,0.414
+Mitte,Lützowstraße,356,333,8.394,0.059,0.941,0.0,0.18,0.258,0.324,0.417
+Mitte,Nordbahnhof,174,167,11.287,0.057,0.0,0.943,-0.102,0.144,0.814,0.042
+Mitte,Nordufer,219,215,8.002,1.0,0.0,0.0,1.158,0.0,0.195,0.805
+Mitte,Oranienburger Straße,841,812,9.229,0.0,0.0,1.0,-0.488,0.341,0.659,0.0
+Mitte,Schillerpark,398,391,6.69,1.0,0.0,0.0,0.235,0.0,0.806,0.194
+Mitte,Schulstraße,173,164,7.075,1.0,0.0,0.0,0.561,0.0,0.5,0.5
+Mitte,Schwedenstraße,158,158,7.351,1.0,0.0,0.0,0.715,0.0,0.405,0.595
+Mitte,Soldiner Straße,371,363,6.924,1.0,0.0,0.0,0.463,0.0,0.609,0.391
+Mitte,Sparrplatz,204,199,7.653,1.0,0.0,0.0,0.884,0.0,0.231,0.769
+Mitte,Stephankiez,425,407,8.039,0.976,0.024,0.0,1.079,0.005,0.174,0.821
+Mitte,Stülerstraße,177,146,9.635,0.0,0.593,0.407,0.274,0.089,0.486,0.425
+Mitte,Thomasiusstraße,283,251,8.307,0.004,0.996,0.0,0.267,0.215,0.303,0.482
+Mitte,Uferstraße,326,320,7.879,1.0,0.0,0.0,1.022,0.0,0.231,0.769
+Mitte,Unter den Linden,470,258,12.148,0.0,0.0,1.0,-0.523,0.314,0.686,0.0
+Mitte,Westliche Müllerstraße,318,306,7.554,1.0,0.0,0.0,0.752,0.0,0.346,0.654
+Mitte,Wilhelmstraße,213,139,10.348,0.0,0.0,1.0,-0.705,0.453,0.547,0.0
+Mitte,Zillesiedlung,106,104,6.929,1.0,0.0,0.0,0.212,0.0,0.856,0.144
+Mitte,Zwinglistraße,171,170,7.983,0.947,0.053,0.0,1.135,0.0,0.135,0.865
+Neukölln,Alt-Rixdorf,365,363,7.336,1.0,0.0,0.0,0.791,0.0,0.32,0.68
+Neukölln,Alt-Rudow,2185,1422,7.678,0.245,0.755,0.0,0.114,0.321,0.314,0.365
+Neukölln,Blumenviertel,2762,1525,7.873,0.0,1.0,0.0,-0.023,0.334,0.355,0.311
+Neukölln,Bouchéstraße,162,162,6.885,0.963,0.037,0.0,0.389,0.0,0.648,0.352
+Neukölln,Braunschweiger Straße,339,335,7.426,1.0,0.0,0.0,0.773,0.0,0.358,0.642
+Neukölln,Britzer Garten,540,244,7.72,0.313,0.687,0.0,0.246,0.221,0.439,0.34
+Neukölln,Buckow Mitte,1672,1154,7.644,1.0,0.0,0.0,0.797,0.0,0.392,0.608
+Neukölln,Buckow Ost,1216,792,7.723,1.0,0.0,0.0,0.872,0.0,0.446,0.554
+Neukölln,Buckow West,1753,1175,7.778,1.0,0.0,0.0,0.889,0.0,0.438,0.562
+Neukölln,Donaustraße,266,266,8.604,0.989,0.011,0.0,1.038,0.004,0.177,0.82
+Neukölln,Flughafenstraße,358,355,7.384,1.0,0.0,0.0,0.696,0.0,0.383,0.617
+Neukölln,Frauenviertel,360,245,7.737,0.0,1.0,0.0,0.012,0.2,0.588,0.212
+Neukölln,Ganghoferstraße,241,241,7.407,1.0,0.0,0.0,0.726,0.0,0.353,0.647
+Neukölln,Glasower Straße,503,483,7.684,1.0,0.0,0.0,0.83,0.0,0.317,0.683
+Neukölln,Goldhähnchenweg,102,101,6.996,1.0,0.0,0.0,0.485,0.0,0.614,0.386
+Neukölln,Gropiusstadt Mitte,164,120,6.213,0.884,0.116,0.0,0.083,0.083,0.775,0.142
+Neukölln,Gropiusstadt Nord-West,446,378,7.041,0.982,0.018,0.0,0.415,0.003,0.627,0.37
+Neukölln,Gropiusstadt Süd-Ost,194,188,6.019,0.696,0.304,0.0,-0.122,0.245,0.66,0.096
+Neukölln,Gropiusstadt Süd-West,225,205,6.875,0.867,0.133,0.0,0.346,0.098,0.576,0.327
+Neukölln,Handwerker-Siedlung,853,207,7.479,0.782,0.218,0.0,0.831,0.082,0.232,0.686
+Neukölln,Hasenheide,165,157,8.288,0.618,0.382,0.0,0.439,0.102,0.446,0.452
+Neukölln,Hertzbergplatz,386,353,7.568,1.0,0.0,0.0,0.833,0.0,0.357,0.643
+Neukölln,Hufeisensiedlung,1205,1148,7.309,1.0,0.0,0.0,0.756,0.0,0.41,0.59
+Neukölln,Jahnstraße,329,300,7.793,1.0,0.0,0.0,1.013,0.0,0.25,0.75
+Neukölln,Körnerpark,475,473,7.587,1.0,0.0,0.0,0.973,0.0,0.3,0.7
+Neukölln,Maybachufer,287,287,7.861,0.22,0.78,0.0,0.352,0.108,0.491,0.401
+Neukölln,Mohriner Allee Nord,728,316,8.199,0.915,0.085,0.0,1.092,0.032,0.354,0.614
+Neukölln,Ortolanweg,102,66,6.932,0.99,0.01,0.0,0.303,0.0,0.697,0.303
+Neukölln,Parchimer Allee Süd,973,938,7.434,1.0,0.0,0.0,0.803,0.0,0.314,0.686
+Neukölln,Park am Buschkrug,619,556,6.935,1.0,0.0,0.0,0.448,0.0,0.692,0.308
+Neukölln,Reuterplatz,281,281,7.503,0.0,1.0,0.0,-0.107,0.238,0.63,0.132
+Neukölln,Rollberg,246,245,6.921,1.0,0.0,0.0,0.404,0.0,0.682,0.318
+Neukölln,Schillerpromenade Nord,275,273,7.564,0.047,0.953,0.0,-0.125,0.238,0.667,0.095
+Neukölln,Schillerpromenade Süd,262,262,7.524,1.0,0.0,0.0,0.897,0.0,0.309,0.691
+Neukölln,Schulenburgpark,735,518,6.225,1.0,0.0,0.0,0.083,0.0,0.925,0.075
+Neukölln,Silbersteinstraße,209,204,8.64,1.0,0.0,0.0,0.975,0.0,0.275,0.725
+Neukölln,Tempelhofer Weg,535,474,7.122,1.0,0.0,0.0,0.519,0.0,0.54,0.46
+Neukölln,Treptower Straße Nord,278,247,7.783,1.0,0.0,0.0,1.154,0.0,0.178,0.822
+Neukölln,Vogelviertel Nord,644,410,7.602,1.0,0.0,0.0,0.871,0.0,0.424,0.576
+Neukölln,Vogelviertel Süd,756,660,7.337,0.726,0.274,0.0,0.495,0.065,0.498,0.436
+Neukölln,Waltersdorfer Chaussee Ost,1515,749,7.486,0.847,0.153,0.0,0.618,0.088,0.403,0.509
+Neukölln,Wartheplatz,249,223,7.499,1.0,0.0,0.0,0.892,0.0,0.269,0.731
+Neukölln,Waßmannsdorfer Chaussee,2207,989,8.249,0.0,1.0,0.0,0.071,0.34,0.25,0.411
+Neukölln,Weichselplatz,411,403,7.669,1.0,0.0,0.0,0.772,0.0,0.352,0.648
+Neukölln,Weiße Siedlung,247,176,6.84,0.951,0.049,0.0,0.312,0.017,0.67,0.312
+Neukölln,Zittauer Straße,2267,1016,7.973,0.0,1.0,0.0,-0.027,0.307,0.412,0.281
+Pankow,Alter Schlachthof,411,279,10.385,0.0,0.185,0.815,-0.061,0.24,0.581,0.179
+Pankow,Anton-Saefkow-Park,261,257,8.305,0.0,0.161,0.839,-0.529,0.381,0.619,0.0
+Pankow,Arnimplatz,168,164,8.691,0.0,0.0,1.0,-0.274,0.25,0.75,0.0
+Pankow,Arnold-Zweig-Straße,233,222,7.446,0.0,1.0,0.0,-0.464,0.595,0.275,0.131
+Pankow,Behaimstraße,523,515,7.831,0.0,0.811,0.189,-0.19,0.394,0.346,0.26
+Pankow,Blankenburg,2676,384,7.941,0.0,1.0,0.0,-0.068,0.346,0.375,0.279
+Pankow,Blankenburger Süden,35,6,6.077,0.0,1.0,0.0,-0.667,0.833,0.0,0.167
+Pankow,Blankenfelde,1492,228,8.19,0.541,0.459,0.0,0.719,0.189,0.118,0.693
+Pankow,Bucher Forst,618,356,6.99,0.581,0.383,0.036,0.118,0.315,0.303,0.382
+Pankow,Bötzowstraße,480,459,8.682,0.0,0.035,0.965,-0.484,0.329,0.671,0.0
+Pankow,Bühringstraße,517,399,7.216,0.162,0.838,0.0,-0.331,0.584,0.188,0.228
+Pankow,Christburger Straße,248,243,9.072,0.0,0.0,1.0,-0.23,0.185,0.815,0.0
+Pankow,Eddastraße,1444,393,7.721,0.0,1.0,0.0,-0.015,0.346,0.323,0.331
+Pankow,Falkplatz,265,259,9.035,0.008,0.0,0.992,-0.17,0.158,0.834,0.008
+Pankow,Florakiez,457,422,8.348,0.002,0.998,0.0,0.32,0.083,0.514,0.403
+Pankow,Garbátyplatz,353,314,7.577,0.0,0.946,0.054,-0.182,0.268,0.602,0.131
+Pankow,Gethsemanekirche,118,117,8.491,0.0,0.0,1.0,-0.872,0.632,0.368,0.0
+Pankow,Hansastraße,561,339,7.339,0.207,0.793,0.0,-0.165,0.389,0.398,0.212
+Pankow,Heinersdorf,1994,818,8.439,0.0,1.0,0.0,0.178,0.242,0.337,0.421
+Pankow,Helmholtzplatz,232,232,8.823,0.0,0.0,1.0,-0.461,0.435,0.565,0.0
+Pankow,Herthaplatz,1537,735,8.805,0.082,0.909,0.009,0.599,0.082,0.272,0.646
+Pankow,Humannplatz,212,212,8.172,0.0,0.217,0.783,-0.528,0.476,0.495,0.028
+Pankow,Immanuelkirchstraße,243,239,9.194,0.0,0.07,0.93,-0.272,0.272,0.715,0.013
+Pankow,Karow Bahnhof,1554,549,8.438,0.0,1.0,0.0,0.111,0.293,0.302,0.404
+Pankow,Karow Nord,1373,899,8.262,0.232,0.768,0.0,0.447,0.065,0.581,0.355
+Pankow,Karow Ost,399,105,8.55,0.008,0.992,0.0,0.352,0.181,0.314,0.505
+Pankow,Karower Chaussee,455,348,5.548,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+Pankow,Kissingenviertel,631,613,7.245,0.0,1.0,0.0,-0.401,0.496,0.409,0.095
+Pankow,Klinikum Buch,489,164,6.604,0.877,0.123,0.0,0.165,0.287,0.335,0.378
+Pankow,Kollwitzplatz,332,321,9.245,0.0,0.0,1.0,-0.458,0.346,0.654,0.0
+Pankow,Komponistenviertel Weißensee,631,620,7.76,0.0,0.461,0.539,-0.502,0.561,0.316,0.123
+Pankow,Krugpfuhl,1345,807,8.72,0.0,1.0,0.0,0.378,0.154,0.315,0.532
+Pankow,Malmöer Straße,137,132,8.957,0.0,0.358,0.642,0.159,0.129,0.561,0.311
+Pankow,Michelangelostraße,204,192,5.45,0.598,0.0,0.402,-0.792,0.411,0.557,0.031
+Pankow,Märchenland,521,25,3.182,0.0,1.0,0.0,-0.92,0.92,0.08,0.0
+Pankow,Nisbléstraße,1363,499,8.439,0.0,1.0,0.0,0.471,0.102,0.325,0.573
+Pankow,Norweger Viertel,109,102,8.321,0.0,0.404,0.596,-0.324,0.392,0.48,0.127
+Pankow,Ostseestraße,418,412,7.18,0.0,1.0,0.0,-0.299,0.498,0.303,0.199
+Pankow,Pankower Tor,7,1,8.71,0.0,1.0,0.0,1.0,0.0,0.0,1.0
+Pankow,Parkstraße,300,255,8.641,0.0,0.043,0.957,-0.643,0.569,0.396,0.035
+Pankow,Pastor-Niemöller-Platz,652,521,8.416,0.0,0.693,0.307,-0.058,0.242,0.52,0.238
+Pankow,Rathaus Weißensee,636,365,6.955,0.566,0.434,0.0,-0.162,0.427,0.348,0.225
+Pankow,Rodenbergstraße,143,143,8.007,0.0,0.224,0.776,-0.636,0.469,0.455,0.077
+Pankow,Rosenthal,1004,521,9.813,0.0,1.0,0.0,0.76,0.086,0.067,0.846
+Pankow,Schlosspark,633,529,6.845,0.022,0.978,0.0,-0.473,0.605,0.263,0.132
+Pankow,Schönholz,619,347,8.242,0.013,0.622,0.365,-0.291,0.372,0.334,0.294
+Pankow,Senefelderstraße,141,141,8.946,0.0,0.0,1.0,-0.206,0.206,0.794,0.0
+Pankow,Spiekermann Straße,138,136,6.902,0.0,1.0,0.0,-0.507,0.684,0.14,0.176
+Pankow,Sredzkistraße,261,261,8.777,0.0,0.0,1.0,-0.345,0.238,0.762,0.0
+Pankow,Teutoburger Platz,486,482,9.371,0.0,0.0,1.0,-0.301,0.239,0.761,0.0
+Pankow,Thälmannpark,110,91,9.223,0.0,0.191,0.809,-0.802,0.516,0.484,0.0
+Pankow,Tiroler Viertel,335,329,6.928,0.0,1.0,0.0,-0.565,0.657,0.252,0.091
+Pankow,Trelleborger Viertel,215,215,7.596,0.0,1.0,0.0,-0.028,0.409,0.209,0.381
+Pankow,Uhlandstraße,2302,697,8.509,0.301,0.682,0.017,0.435,0.102,0.389,0.509
+Pankow,Velodrom,132,123,7.587,0.0,1.0,0.0,-0.065,0.285,0.496,0.22
+Pankow,Volkspark Prenzlauer Berg,228,169,6.907,1.0,0.0,0.0,0.473,0.0,0.734,0.266
+Pankow,Weißenseer Spitze,603,603,8.079,0.0,1.0,0.0,0.206,0.212,0.37,0.418
+Pankow,Weißer See,476,427,8.364,0.0,0.414,0.586,-0.426,0.4,0.475,0.124
+Pankow,Wilhelmsruh,1307,859,7.896,0.0,1.0,0.0,0.086,0.332,0.25,0.418
+Pankow,Wolfshagener Straße,483,449,7.788,0.0,0.679,0.321,-0.334,0.352,0.49,0.158
+Reinickendorf,Alt-Heiligensee,2608,1162,8.721,0.782,0.218,0.0,1.133,0.031,0.222,0.747
+Reinickendorf,Alt-Tegel,1036,778,8.33,0.007,0.575,0.418,-0.366,0.44,0.41,0.15
+Reinickendorf,Borsigwalde,1184,795,7.408,0.981,0.019,0.0,0.709,0.016,0.444,0.54
+Reinickendorf,Breitkopfbecken,517,503,7.048,1.0,0.0,0.0,0.575,0.0,0.473,0.527
+Reinickendorf,Dannenwalder Weg,211,188,6.27,0.412,0.588,0.0,-0.447,0.521,0.426,0.053
+Reinickendorf,Frohnau Ost,2616,1596,8.569,0.0,0.107,0.893,-0.552,0.451,0.524,0.025
+Reinickendorf,Frohnau West,2697,1646,8.889,0.0,0.0,1.0,-0.603,0.443,0.557,0.0
+Reinickendorf,Hausotterplatz,755,700,7.067,0.981,0.0,0.019,0.483,0.0,0.576,0.424
+Reinickendorf,Heiligensee,2605,1466,8.036,0.111,0.884,0.005,0.269,0.259,0.271,0.469
+Reinickendorf,Heiligensee Nord,1321,492,7.793,0.007,0.993,0.0,0.028,0.378,0.215,0.407
+Reinickendorf,Hermsdorf Ost/Waldsee,2452,1586,8.429,0.0,0.465,0.535,-0.253,0.385,0.409,0.207
+Reinickendorf,Hermsdorf West,2615,1749,8.577,0.0,0.587,0.413,-0.177,0.355,0.372,0.273
+Reinickendorf,Humboldtstraße,452,419,6.532,1.0,0.0,0.0,0.215,0.0,0.809,0.191
+Reinickendorf,Klixstraße,379,346,7.021,1.0,0.0,0.0,0.711,0.0,0.396,0.604
+Reinickendorf,Konradshöhe/Tegelort,2050,1270,8.474,0.0,1.0,0.0,0.209,0.261,0.269,0.47
+Reinickendorf,Letteplatz,767,747,7.399,1.0,0.0,0.0,0.744,0.0,0.379,0.621
+Reinickendorf,Lübars,1868,755,7.797,0.0,1.0,0.0,0.054,0.326,0.294,0.38
+Reinickendorf,Lübarser Straße,869,432,7.323,0.998,0.002,0.0,0.789,0.002,0.486,0.512
+Reinickendorf,Meller Bogen,418,352,7.222,1.0,0.0,0.0,0.705,0.0,0.384,0.616
+Reinickendorf,Märkisches Zentrum,275,213,6.055,0.564,0.436,0.0,-0.469,0.479,0.512,0.009
+Reinickendorf,Reinickes Hof,360,238,6.514,1.0,0.0,0.0,0.261,0.0,0.786,0.214
+Reinickendorf,Rollbergesiedlung,290,206,6.945,0.859,0.141,0.0,0.228,0.141,0.626,0.233
+Reinickendorf,Scharnweberstraße,744,718,7.099,1.0,0.0,0.0,0.547,0.0,0.515,0.485
+Reinickendorf,Schorfheidestraße,823,580,8.107,0.0,1.0,0.0,-0.016,0.357,0.302,0.341
+Reinickendorf,Schumacher-Quartier,187,44,7.12,1.0,0.0,0.0,0.773,0.0,0.5,0.5
+Reinickendorf,Schäfersee,741,697,7.531,1.0,0.0,0.0,0.831,0.0,0.304,0.696
+Reinickendorf,TXL,455,103,7.211,0.996,0.004,0.0,0.612,0.0,0.612,0.388
+Reinickendorf,Tegel Süd,524,465,6.963,0.622,0.378,0.0,0.123,0.166,0.551,0.284
+Reinickendorf,Teichstraße,1434,1065,7.575,0.999,0.001,0.0,0.818,0.0,0.331,0.669
+Reinickendorf,Treuenbrietzener Straße,124,86,6.119,0.589,0.411,0.0,-0.174,0.244,0.709,0.047
+Reinickendorf,Waidmannslust,1332,954,7.494,0.0,1.0,0.0,-0.104,0.333,0.437,0.23
+Reinickendorf,Waldidyll/Flughafensee,1556,903,7.98,0.13,0.87,0.0,0.152,0.257,0.355,0.388
+Reinickendorf,Wittenau Mitte,806,659,7.505,1.0,0.0,0.0,0.819,0.0,0.388,0.612
+Reinickendorf,Wittenau Nord,1222,907,7.26,0.073,0.926,0.001,-0.141,0.432,0.278,0.29
+Reinickendorf,Wittenau Süd,1319,1035,7.307,1.0,0.0,0.0,0.676,0.0,0.545,0.455
+Reinickendorf,Ziekowstraße/Freie Scholle,1996,1694,6.664,0.0,1.0,0.0,-0.65,0.75,0.149,0.1
+Spandau,Ackerstraße,407,389,7.067,1.0,0.0,0.0,0.522,0.0,0.491,0.509
+Spandau,Alt-Gatow,1564,556,8.419,0.0,0.85,0.15,0.092,0.286,0.266,0.448
+Spandau,Am Forstacker,301,295,7.161,0.0,1.0,0.0,-0.359,0.458,0.444,0.098
+Spandau,Am Heideberg,521,515,4.905,1.0,0.0,0.0,0.01,0.0,0.99,0.01
+Spandau,Amorbacher Weg,1573,974,7.08,0.107,0.893,0.0,-0.375,0.598,0.198,0.204
+Spandau,An der Kappe,1489,901,7.527,1.0,0.0,0.0,0.767,0.0,0.502,0.498
+Spandau,An der Tränke,601,318,8.57,1.0,0.0,0.0,1.384,0.0,0.06,0.94
+Spandau,Borkumer Straße,584,462,7.614,0.943,0.057,0.0,0.578,0.006,0.552,0.442
+Spandau,Börnicker Straße,1160,761,8.244,0.034,0.966,0.0,0.156,0.261,0.321,0.418
+Spandau,Carl-Schurz-Straße,989,945,7.241,1.0,0.0,0.0,0.632,0.0,0.453,0.547
+Spandau,Döberitzer Weg,844,381,7.688,0.166,0.834,0.0,-0.037,0.354,0.394,0.252
+Spandau,Eckschanze,279,272,7.263,1.0,0.0,0.0,0.566,0.0,0.441,0.559
+Spandau,Eiswerder,430,281,8.249,0.953,0.047,0.0,0.907,0.0,0.406,0.594
+Spandau,Freiheit,341,172,6.959,0.994,0.006,0.0,0.483,0.0,0.517,0.483
+Spandau,Gartenfeld,10,2,6.48,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+Spandau,Gartenfelder Straße,846,818,7.192,1.0,0.0,0.0,0.665,0.0,0.418,0.582
+Spandau,Germersheimer Platz,568,567,7.117,1.0,0.0,0.0,0.534,0.0,0.471,0.529
+Spandau,Graetschelsteig,149,122,5.867,0.919,0.081,0.0,-0.049,0.09,0.885,0.025
+Spandau,Griesingerstraße,413,104,7.029,1.0,0.0,0.0,0.654,0.0,0.615,0.385
+Spandau,Hakenfelde Nord,1367,610,8.846,0.016,0.952,0.032,0.257,0.254,0.234,0.511
+Spandau,Haveleck,565,316,8.965,1.0,0.0,0.0,1.883,0.0,0.0,1.0
+Spandau,Im Spektefeld,986,532,7.012,1.0,0.0,0.0,0.568,0.0,0.553,0.447
+Spandau,Isenburger Weg,1448,728,7.592,0.568,0.432,0.0,0.571,0.161,0.32,0.519
+Spandau,Jägerallee,3790,1796,9.635,0.0,0.407,0.593,0.116,0.24,0.337,0.423
+Spandau,Kafkastraße,1338,590,7.865,0.0,0.0,1.0,-1.044,0.607,0.393,0.0
+Spandau,Kladower Damm,929,344,9.213,0.0,0.143,0.857,-0.262,0.23,0.692,0.078
+Spandau,Kurstraße,320,316,7.397,1.0,0.0,0.0,0.687,0.0,0.405,0.595
+Spandau,Magistratsweg,360,293,6.805,0.564,0.436,0.0,0.085,0.055,0.805,0.14
+Spandau,Maselake,294,205,7.046,0.133,0.867,0.0,-0.156,0.439,0.307,0.254
+Spandau,Maulbeerallee,533,358,6.579,0.936,0.064,0.0,0.324,0.047,0.69,0.263
+Spandau,Mertensstraße,391,279,8.195,0.113,0.887,0.0,0.032,0.38,0.208,0.412
+Spandau,Nonnendammallee,142,33,6.753,0.775,0.225,0.0,0.273,0.03,0.667,0.303
+Spandau,Pillnitzer Weg,479,291,8.403,0.0,1.0,0.0,0.57,0.131,0.168,0.701
+Spandau,Rohrdamm,635,518,7.246,0.997,0.003,0.0,0.448,0.004,0.654,0.342
+Spandau,Rudolf-Wissell-Großsiedlung,135,123,6.167,0.874,0.126,0.0,-0.033,0.13,0.772,0.098
+Spandau,Siemensdamm,248,237,6.943,0.206,0.794,0.0,-0.228,0.304,0.62,0.076
+Spandau,Spandauer Straße,501,340,7.033,0.948,0.052,0.0,0.471,0.015,0.547,0.438
+Spandau,Staakener Straße,1896,916,8.061,0.21,0.79,0.0,0.062,0.357,0.247,0.396
+Spandau,Tiefwerder,297,239,7.164,1.0,0.0,0.0,0.506,0.0,0.669,0.331
+Spandau,Weinmeisterhornweg,1589,1026,7.446,0.0,1.0,0.0,-0.167,0.359,0.449,0.192
+Spandau,Werkstraße,288,145,7.296,0.99,0.01,0.0,0.703,0.0,0.4,0.6
+Spandau,Westerwaldstraße,493,440,6.307,1.0,0.0,0.0,0.13,0.0,0.907,0.093
+Spandau,Wilhelmstadt Ost,586,563,7.421,1.0,0.0,0.0,0.739,0.0,0.352,0.648
+Spandau,Wilhelmstadt West,675,652,7.064,0.991,0.009,0.0,0.416,0.006,0.615,0.379
+Spandau,Zitadellenweg,640,245,8.559,1.0,0.0,0.0,1.38,0.0,0.024,0.976
+Steglitz-Zehlendorf,Alt-Lankwitz,827,518,7.392,0.0,0.886,0.114,-0.423,0.417,0.488,0.095
+Steglitz-Zehlendorf,Augustaplatz,1378,1347,8.356,0.0,0.478,0.522,-0.171,0.317,0.481,0.202
+Steglitz-Zehlendorf,Belßstraße,328,272,7.244,0.0,1.0,0.0,-0.522,0.607,0.309,0.085
+Steglitz-Zehlendorf,Bergstraße,489,446,7.937,0.0,0.354,0.646,-0.525,0.543,0.392,0.065
+Steglitz-Zehlendorf,Berlepschstraße,1432,925,7.999,0.0,0.964,0.036,-0.063,0.362,0.338,0.299
+Steglitz-Zehlendorf,Bismarckstraße,268,268,7.719,0.0,1.0,0.0,0.056,0.108,0.728,0.164
+Steglitz-Zehlendorf,Botanischer Garten,774,711,8.028,0.0,0.0,1.0,-0.848,0.726,0.274,0.0
+Steglitz-Zehlendorf,Dahlem,1737,969,10.247,0.0,0.101,0.899,-0.294,0.228,0.732,0.04
+Steglitz-Zehlendorf,Düppel,907,707,8.623,0.0,0.6,0.4,-0.04,0.236,0.532,0.232
+Steglitz-Zehlendorf,Feuerbachstraße,528,521,7.364,0.0,0.761,0.239,-0.468,0.514,0.411,0.075
+Steglitz-Zehlendorf,Fichtenberg,869,750,8.318,0.0,0.005,0.995,-0.716,0.523,0.477,0.0
+Steglitz-Zehlendorf,Fischerhüttenstraße,1213,899,9.01,0.0,0.0,1.0,-0.574,0.444,0.556,0.0
+Steglitz-Zehlendorf,Fischtal,1960,1683,9.819,0.0,0.0,1.0,-0.281,0.25,0.75,0.0
+Steglitz-Zehlendorf,Gallwitzallee,786,539,8.17,0.0,0.986,0.014,-0.098,0.391,0.31,0.299
+Steglitz-Zehlendorf,Goerzwerke,533,306,8.686,0.0,1.0,0.0,0.431,0.203,0.163,0.634
+Steglitz-Zehlendorf,Hindenburgdamm,474,406,8.495,0.0,1.0,0.0,0.283,0.123,0.47,0.406
+Steglitz-Zehlendorf,Hüttenweg,399,313,9.912,0.0,0.223,0.777,-0.08,0.208,0.604,0.188
+Steglitz-Zehlendorf,Kaiser-Wilhelm-Straße,678,671,7.323,0.0,0.999,0.001,-0.34,0.441,0.458,0.101
+Steglitz-Zehlendorf,Komponistenviertel Lankwitz,911,769,7.914,0.0,0.708,0.292,-0.185,0.336,0.436,0.229
+Steglitz-Zehlendorf,Krumme Lanke,1894,1442,9.547,0.0,0.0,1.0,-0.551,0.388,0.612,0.0
+Steglitz-Zehlendorf,Königsberger Straße,1171,968,8.345,0.0,0.767,0.233,0.063,0.276,0.341,0.383
+Steglitz-Zehlendorf,Landweg,7,1,8.12,0.429,0.571,0.0,1.0,0.0,0.0,1.0
+Steglitz-Zehlendorf,Lankwitz Kirche,620,595,7.37,0.0,0.815,0.185,-0.484,0.516,0.368,0.116
+Steglitz-Zehlendorf,Lankwitz Süd,1860,1390,7.735,0.0,1.0,0.0,-0.035,0.354,0.327,0.319
+Steglitz-Zehlendorf,Lichterfelde Süd,1031,807,8.146,0.538,0.462,0.0,0.699,0.068,0.366,0.566
+Steglitz-Zehlendorf,Lichterfelde West,1393,1230,8.544,0.0,0.192,0.808,-0.474,0.453,0.45,0.098
+Steglitz-Zehlendorf,Markelstraße,363,341,7.996,0.0,0.0,1.0,-0.689,0.663,0.337,0.0
+Steglitz-Zehlendorf,Mittelstraße,581,557,7.638,0.0,0.964,0.036,-0.068,0.266,0.537,0.197
+Steglitz-Zehlendorf,Munsterdamm,666,605,7.702,0.0,0.992,0.008,-0.058,0.302,0.453,0.245
+Steglitz-Zehlendorf,Nikolassee,2237,1554,9.053,0.0,0.003,0.997,-0.491,0.362,0.634,0.004
+Steglitz-Zehlendorf,Oberhofer Platz,1334,1154,8.228,0.0,0.998,0.002,0.177,0.192,0.436,0.372
+Steglitz-Zehlendorf,Schloßstraße,472,450,8.326,0.0,0.123,0.877,-0.571,0.549,0.413,0.038
+Steglitz-Zehlendorf,Schweizer Viertel,3195,2285,9.139,0.0,0.976,0.024,0.551,0.13,0.187,0.683
+Steglitz-Zehlendorf,Schütte-Lanz-Straße,1975,1357,8.411,0.0,1.0,0.0,0.314,0.129,0.428,0.443
+Steglitz-Zehlendorf,Stadtpark,516,495,7.289,0.0,0.793,0.207,-0.479,0.515,0.396,0.089
+Steglitz-Zehlendorf,Sundgauer Straße,696,655,8.202,0.0,0.349,0.651,-0.467,0.524,0.266,0.211
+Steglitz-Zehlendorf,Südende,818,775,7.82,0.0,1.0,0.0,0.066,0.219,0.495,0.285
+Steglitz-Zehlendorf,Teltower Damm,2619,2082,9.142,0.0,0.651,0.349,0.121,0.199,0.433,0.368
+Steglitz-Zehlendorf,Thermometersiedlung,134,100,7.493,0.672,0.328,0.0,0.4,0.1,0.49,0.41
+Steglitz-Zehlendorf,Thielallee,1242,718,9.204,0.0,0.019,0.981,-0.564,0.411,0.577,0.013
+Steglitz-Zehlendorf,Wannsee,2764,1734,9.598,0.0,0.054,0.946,-0.449,0.34,0.652,0.008
+Steglitz-Zehlendorf,Zehlendorf Eiche,1051,785,9.377,0.0,0.34,0.66,-0.106,0.242,0.54,0.218
+Steglitz-Zehlendorf,Zehlendorf Mitte,498,445,8.113,0.0,0.034,0.966,-0.694,0.548,0.445,0.007
+Steglitz-Zehlendorf,Zehlendorf Süd,663,531,8.168,0.0,1.0,0.0,0.136,0.186,0.492,0.322
+Tempelhof-Schöneberg,Alvenslebenstraße,226,226,7.043,0.982,0.018,0.0,0.5,0.018,0.615,0.367
+Tempelhof-Schöneberg,Barbarossaplatz,458,443,8.219,0.0,0.155,0.845,-0.576,0.51,0.438,0.052
+Tempelhof-Schöneberg,Bayerischer Platz,546,540,8.146,0.0,0.048,0.952,-0.656,0.598,0.396,0.006
+Tempelhof-Schöneberg,Belziger Straße,402,387,7.641,0.0,1.0,0.0,-0.057,0.248,0.561,0.191
+Tempelhof-Schöneberg,Birnhornweg,735,511,7.675,0.0,1.0,0.0,-0.039,0.364,0.311,0.325
+Tempelhof-Schöneberg,Bosepark,450,416,7.412,0.0,1.0,0.0,-0.151,0.224,0.704,0.072
+Tempelhof-Schöneberg,Ceciliengärten,561,555,7.939,0.0,0.0,1.0,-0.908,0.712,0.288,0.0
+Tempelhof-Schöneberg,Cheruskerstraße,438,351,7.985,0.0,1.0,0.0,0.168,0.105,0.621,0.274
+Tempelhof-Schöneberg,Diedersdorfer Weg,782,153,7.841,0.858,0.142,0.0,0.791,0.15,0.203,0.647
+Tempelhof-Schöneberg,Eisenacher Straße,860,767,6.959,0.263,0.737,0.0,-0.392,0.464,0.477,0.059
+Tempelhof-Schöneberg,Feurigstraße,221,221,7.412,0.769,0.231,0.0,0.52,0.154,0.217,0.629
+Tempelhof-Schöneberg,Franziusweg,2075,1334,8.181,0.0,0.88,0.12,0.011,0.313,0.355,0.332
+Tempelhof-Schöneberg,Friedrich-Karl-Straße,393,391,7.543,0.0,1.0,0.0,-0.166,0.307,0.552,0.141
+Tempelhof-Schöneberg,Fritz-Werner-Straße,1013,628,6.95,0.913,0.087,0.0,0.525,0.035,0.576,0.389
+Tempelhof-Schöneberg,Frobenstraße,311,296,7.555,0.971,0.029,0.0,0.946,0.0,0.324,0.676
+Tempelhof-Schöneberg,Germaniagarten,431,357,7.583,1.0,0.0,0.0,0.975,0.0,0.084,0.916
+Tempelhof-Schöneberg,Gontermannstraße,748,685,6.748,0.0,1.0,0.0,-0.666,0.724,0.218,0.058
+Tempelhof-Schöneberg,Grazer Platz,702,590,7.46,0.0,1.0,0.0,-0.288,0.408,0.471,0.12
+Tempelhof-Schöneberg,Großgörschenstraße,318,313,7.857,0.0,1.0,0.0,-0.038,0.288,0.463,0.249
+Tempelhof-Schöneberg,Hohenfriedbergstraße,164,156,7.765,0.0,1.0,0.0,0.09,0.173,0.564,0.263
+Tempelhof-Schöneberg,Horstwalder Straße,798,579,7.592,0.0,1.0,0.0,-0.021,0.242,0.537,0.221
+Tempelhof-Schöneberg,Hundsteinweg,1978,1384,7.809,0.141,0.859,0.0,0.174,0.241,0.405,0.353
+Tempelhof-Schöneberg,Imbrosweg,889,709,7.682,0.832,0.168,0.0,0.81,0.007,0.315,0.678
+Tempelhof-Schöneberg,John-Locke-Straße,1010,791,8.019,0.0,1.0,0.0,-0.18,0.459,0.262,0.279
+Tempelhof-Schöneberg,Julius-Leber-Brücke,104,104,6.856,0.0,1.0,0.0,-0.413,0.577,0.26,0.163
+Tempelhof-Schöneberg,Kalckreuthstraße,358,357,8.105,0.0,0.905,0.095,0.148,0.168,0.515,0.317
+Tempelhof-Schöneberg,Kettinger Straße,2735,1998,7.8,0.037,0.963,0.0,0.055,0.336,0.288,0.376
+Tempelhof-Schöneberg,Kirchstraße,1229,813,7.84,0.0,1.0,0.0,-0.046,0.339,0.367,0.294
+Tempelhof-Schöneberg,Lindenhofsiedlung,434,336,7.167,0.359,0.641,0.0,-0.417,0.589,0.238,0.173
+Tempelhof-Schöneberg,Machonstraße,575,558,7.188,0.376,0.624,0.0,-0.041,0.301,0.462,0.237
+Tempelhof-Schöneberg,Marienfelde Nordost,626,330,7.482,0.756,0.244,0.0,0.688,0.076,0.348,0.576
+Tempelhof-Schöneberg,Marienfelder Allee Nordwest,1097,941,6.999,0.986,0.014,0.0,0.382,0.003,0.658,0.339
+Tempelhof-Schöneberg,Marienhöhe,750,493,7.098,0.0,1.0,0.0,-0.602,0.72,0.162,0.118
+Tempelhof-Schöneberg,Nahariyastraße,803,567,7.412,0.981,0.019,0.0,0.744,0.025,0.386,0.589
+Tempelhof-Schöneberg,Odenwaldstraße,442,435,8.344,0.0,0.0,1.0,-0.545,0.526,0.474,0.0
+Tempelhof-Schöneberg,Paradestraße,1301,883,7.962,0.0,0.958,0.042,-0.177,0.413,0.342,0.245
+Tempelhof-Schöneberg,Perelsplatz,514,481,8.166,0.0,0.0,1.0,-0.659,0.57,0.43,0.0
+Tempelhof-Schöneberg,Rathaus Tempelhof,1084,675,7.594,0.393,0.607,0.0,-0.01,0.317,0.416,0.267
+Tempelhof-Schöneberg,Ringstraße,585,486,7.021,0.863,0.137,0.0,0.391,0.062,0.537,0.401
+Tempelhof-Schöneberg,Schöneberger Linse,137,61,7.275,0.0,1.0,0.0,-0.361,0.672,0.016,0.311
+Tempelhof-Schöneberg,Taunusstraße,337,336,8.283,0.0,0.0,1.0,-0.554,0.527,0.473,0.0
+Tempelhof-Schöneberg,Tirschenreuther Ring Ost,178,158,6.669,1.0,0.0,0.0,0.525,0.0,0.671,0.329
+Tempelhof-Schöneberg,Tirschenreuther Ring West,225,201,6.119,1.0,0.0,0.0,0.149,0.0,0.851,0.149
+Tempelhof-Schöneberg,Töpchiner Weg,2591,1985,7.834,0.368,0.632,0.0,0.374,0.199,0.384,0.416
+Tempelhof-Schöneberg,Volkspark (Rudolph-Wilde-Park),455,442,8.132,0.0,0.989,0.011,0.215,0.07,0.645,0.285
+Tempelhof-Schöneberg,Wittekindstraße,739,715,7.111,0.989,0.011,0.0,0.613,0.004,0.424,0.572
+Tempelhof-Schöneberg,Wittelsbacherstraße,1039,653,8.099,0.0,1.0,0.0,0.058,0.325,0.292,0.383
+Tempelhof-Schöneberg,Wittenbergplatz,461,417,8.653,0.0,0.603,0.397,0.153,0.199,0.386,0.415
+Treptow-Köpenick,Allende I,144,127,7.156,0.0,0.917,0.083,-0.402,0.614,0.087,0.299
+Treptow-Köpenick,Allende II,89,73,5.65,0.0,1.0,0.0,-0.973,0.986,0.0,0.014
+Treptow-Köpenick,Alt-Bohnsdorf,2971,1215,7.578,0.992,0.008,0.0,0.781,0.002,0.485,0.514
+Treptow-Köpenick,Alt-Friedrichshagen,1835,1653,7.517,0.0,0.086,0.914,-1.106,0.754,0.239,0.007
+Treptow-Köpenick,Alt-Treptow,714,570,7.453,0.007,0.943,0.05,-0.295,0.44,0.407,0.153
+Treptow-Köpenick,Altstadt Köpenick,434,421,7.206,0.813,0.177,0.009,0.48,0.029,0.501,0.47
+Treptow-Köpenick,Bahnhof Schöneweide,520,395,7.909,0.533,0.467,0.0,0.418,0.172,0.453,0.375
+Treptow-Köpenick,Bahnhofstraße,506,454,7.519,0.0,0.789,0.211,-0.546,0.535,0.313,0.152
+Treptow-Köpenick,Baumschulenweg Ost,210,203,7.819,0.0,1.0,0.0,0.01,0.153,0.685,0.163
+Treptow-Köpenick,Baumschulenweg West,772,751,6.99,0.0,1.0,0.0,-0.435,0.531,0.373,0.096
+Treptow-Köpenick,Dammheide,1417,855,7.087,0.0,1.0,0.0,-0.326,0.551,0.225,0.225
+Treptow-Köpenick,Dorf Altglienicke,2925,1249,8.343,0.174,0.826,0.0,0.595,0.108,0.31,0.582
+Treptow-Köpenick,Dörpfeldstraße Ost,797,567,7.665,0.322,0.678,0.0,-0.071,0.273,0.566,0.16
+Treptow-Köpenick,Dörpfeldstraße West,632,539,7.951,0.0,1.0,0.0,-0.096,0.386,0.325,0.289
+Treptow-Köpenick,Falkenberg,684,391,9.451,1.0,0.0,0.0,1.586,0.0,0.13,0.87
+Treptow-Köpenick,Friedrichshagener Straße,167,140,8.763,0.0,1.0,0.0,0.471,0.164,0.2,0.636
+Treptow-Köpenick,Griechischer Park,599,571,7.647,0.409,0.591,0.0,0.068,0.37,0.264,0.366
+Treptow-Köpenick,Grünau,1016,618,8.554,0.173,0.815,0.012,0.38,0.183,0.348,0.469
+Treptow-Köpenick,Güterbahnhof Köpenick,145,132,7.247,0.0,1.0,0.0,-0.295,0.417,0.462,0.121
+Treptow-Köpenick,Helmholtz-Kiez,321,170,7.637,0.91,0.09,0.0,0.853,0.0,0.282,0.718
+Treptow-Köpenick,Hirschgarten,581,340,7.274,0.0,0.85,0.15,-0.576,0.626,0.271,0.103
+Treptow-Köpenick,Johannisthal Ost,494,467,7.209,0.172,0.828,0.0,-0.182,0.338,0.505,0.156
+Treptow-Köpenick,Johannisthal West,571,274,6.95,0.326,0.674,0.0,-0.153,0.427,0.358,0.215
+Treptow-Köpenick,Karolinenhof,669,208,8.503,1.0,0.0,0.0,1.332,0.0,0.173,0.827
+Treptow-Köpenick,Kietzer Feld/Nachtheide,1796,860,7.692,0.071,0.928,0.001,-0.015,0.445,0.126,0.429
+Treptow-Köpenick,Kosmos Viertel,174,162,5.66,0.845,0.155,0.0,-0.123,0.154,0.821,0.025
+Treptow-Köpenick,Köllnische Vorstadt,362,329,6.62,1.0,0.0,0.0,0.432,0.0,0.723,0.277
+Treptow-Köpenick,Kölner Viertel,1203,621,7.702,1.0,0.0,0.0,0.834,0.0,0.401,0.599
+Treptow-Köpenick,Landschaftspark Adlershof,732,192,7.882,0.001,0.999,0.0,-0.12,0.542,0.036,0.422
+Treptow-Köpenick,Mittelheide,739,560,7.913,0.0,1.0,0.0,-0.07,0.412,0.245,0.343
+Treptow-Köpenick,Müggelheim,2745,728,8.121,0.561,0.439,0.0,0.766,0.104,0.277,0.618
+Treptow-Köpenick,Oberspree,560,356,6.72,1.0,0.0,0.0,0.331,0.0,0.806,0.194
+Treptow-Köpenick,Plänterwald Ost,444,403,6.95,0.991,0.002,0.007,0.496,0.0,0.526,0.474
+Treptow-Köpenick,Plänterwald West,264,217,7.054,0.163,0.837,0.0,-0.221,0.332,0.558,0.111
+Treptow-Köpenick,Preußen Siedlung,683,389,8.596,0.007,0.993,0.0,0.283,0.208,0.301,0.491
+Treptow-Köpenick,Rahnsdorf,3135,1152,8.264,1.0,0.0,0.0,1.175,0.0,0.288,0.712
+Treptow-Köpenick,Schmöckwitz/Rauchfangswerder,602,254,7.864,1.0,0.0,0.0,1.13,0.0,0.287,0.713
+Treptow-Köpenick,Siedlung Kämmereiheide,353,118,7.818,0.0,1.0,0.0,0.186,0.373,0.068,0.559
+Treptow-Köpenick,Spindlersfeld,210,162,7.581,0.01,0.99,0.0,-0.358,0.549,0.259,0.191
+Treptow-Köpenick,Späthsfelde,1041,308,8.037,0.011,0.989,0.0,0.026,0.26,0.455,0.286
+Treptow-Köpenick,Wendenschloß,344,272,8.251,0.0,0.218,0.782,-0.518,0.478,0.408,0.114
+Treptow-Köpenick,Wista,434,123,10.743,0.023,0.977,0.0,0.935,0.0,0.065,0.935
+Treptow-Köpenick,Wuhlheide,240,185,7.998,0.625,0.35,0.025,0.373,0.351,0.189,0.459

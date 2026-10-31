@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Label vs. Reality · Berlin</title>
+<meta name="description" content="Does a 'good address' in Berlin cost more? Every building scored by its official Mietspiegel location label and the Zensus rent of its 100 m block.">
+<meta property="og:title" content="Label vs. Reality · Berlin">
+<meta property="og:description" content="Berlin's Mietspiegel 2026 location labels for 360,000 addresses, set against what tenants pay in every 100 m block, on 3D buildings and aerial photos.">
+<meta property="og:image" content="preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <main class="mapwrap">
+    <div id="map" aria-label="Map of Berlin"></div>
+    <div class="card legend-card" id="legend" aria-live="polite"></div>
+
+    <div class="card mapbar" id="mapbar">
+      <div class="seg seg2 mini" id="baseSeg" role="tablist" aria-label="Base map">
+        <button data-base="map" class="on">Map</button>
+        <button data-base="sat">Aerial photo</button>
+      </div>
+      <button class="pill" id="b3dBtn" aria-pressed="false"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.3 6.6 3.7L12 11.7 5.4 8 12 4.3zM5 9.7l6 3.4v6.6l-6-3.4V9.7zm8 10V13l6-3.4v6.6l-6 3.5z" fill="currentColor"/></svg>3D buildings</button>
+      <label class="op"><span>Colour</span><input type="range" id="opac" min="15" max="100" value="85" aria-label="Overlay opacity"></label>
+    </div>
+
+    <div id="tip" class="tip" hidden></div>
+    <div id="loading" class="loading">Loading 360,000 addresses…</div>
+
+    <div class="intro card" id="intro" hidden>
+      <p class="eyebrow">Welcome</p>
+      <h2>Is your address worth its label?</h2>
+      <ol class="steps">
+        <li><b>Find your address</b> and see its official location label, the rent of your block and its score.</li>
+        <li><b>Read the colours:</b> pink = label better than the rent, teal = rent higher than the label, grey = they match.</li>
+        <li><b>Zoom in</b>, switch on <b>3D buildings</b> and the <b>aerial photo</b> to explore street by street.</li>
+      </ol>
+      <button class="primary" id="introGo">Start exploring</button>
+    </div>
+  </main>
+
+  <aside class="panel card" id="panel">
+    <header class="head">
+      <p class="eyebrow">#30DayMapChallenge · Day 1 · Points · Berlin</p>
+      <h1>Does a “good address” cost more?</h1>
+      <p class="lede">Berlin's rent index labels every address as a <b>simple</b>, <b>medium</b> or <b>good</b> location. We scored <b>360,000 addresses</b> and every building against what tenants actually pay in their 100&nbsp;m block.</p>
+    </header>
+
+    <section class="block">
+      <h2 class="label">1 · Find your address</h2>
+      <div class="search">
+        <input id="qStreet" list="streetList" placeholder="Street, e.g. Sonnenallee" autocomplete="off" aria-label="Street">
+        <input id="qNo" placeholder="No." autocomplete="off" aria-label="House number">
+        <datalist id="streetList"></datalist>
+        <button id="qGo">Show my score</button>
+      </div>
+      <p class="msg" id="qMsg"></p>
+    </section>
+
+    <section class="block" id="detail" hidden></section>
+
+    <section class="block">
+      <h2 class="label">2 · Choose what to colour</h2>
+      <div class="seg" id="modeSeg" role="tablist">
+        <button data-mode="score" class="on">Score</button>
+        <button data-mode="label">Label</button>
+        <button data-mode="rent">Rent</button>
+      </div>
+      <p class="hint" id="modeHint"></p>
+      <label class="switch"><input type="checkbox" id="dotsTog" checked><span class="knob"></span><span>Address dots <small>one per address</small></span></label>
+    </section>
+
+    <section class="block">
+      <h2 class="label">3 · The scoreboard</h2>
+      <p class="hint">Each address gets a <b>label level</b> (simple 1 · medium 2 · good 3) and a <b>rent level</b> (its block's rent in Berlin's cheapest, middle or most expensive third). <b>Score = rent level − label level.</b> Click a square to show only those places.</p>
+      <div class="matrix" id="matrix"></div>
+      <div class="scorebar" id="scorebar"></div>
+      <div class="dl" id="downloads"></div>
+    </section>
+
+    <section class="block">
+      <h2 class="label">The labels track rent, but loosely</h2>
+      <p class="big" id="bigNum"></p>
+      <p class="hint" id="bigHint"></p>
+      <div class="lbars" id="lbars"></div>
+    </section>
+
+    <section class="block">
+      <h2 class="label">Districts</h2>
+      <p class="hint">Share of addresses paying <b class="t-cheap">less</b>, <b>as much as</b> or <b class="t-pricey">more</b> than their label suggests. Click to zoom.</p>
+      <ol id="dist" class="rank dist"></ol>
+    </section>
+
+    <section class="block">
+      <h2 class="label">Neighbourhoods to look at</h2>
+      <div class="two">
+        <div><h3 class="t-cheap">Cheaper than labelled</h3><ol class="mini-list" id="plrCheap"></ol></div>
+        <div><h3 class="t-pricey">Pricier than labelled</h3><ol class="mini-list" id="plrPricey"></ol></div>
+      </div>
+      <p class="hint">Planning areas (LOR) with at least 50 addresses with rent, by average score.</p>
+    </section>
+
+    <footer class="foot">
+      <p><b>Method.</b> Every address of the Berliner Mietspiegel 2026 location map is placed in its Zensus 2022 100 m grid cell (Gitter-ID) and receives that cell's average net rent (Nettokaltmiete, €/m²). Rent levels are Berlin-wide thirds of address-level rent. Each LoD2 building takes the majority label of the addresses inside it (or within 10 m) and the rent of the cell at its centre.</p>
+      <p><b>Limits.</b> Zensus rent describes <b>existing tenancies on 15 May 2022</b>, not today's asking rents, and is suppressed in cells with few rented flats; values in brackets are less reliable. The label describes the wider surroundings, not a single flat. This is a <b>spatial comparison of area-level data</b>, not a statement about individual flats, landlords or households.</p>
+      <p id="coverage"></p>
+      <p><b>Data &amp; licences.</b>
+        Wohnlagen nach Adressen zum Berliner Mietspiegel 2026 © Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen Berlin (<a href="https://www.govdata.de/dl-de/zero-2-0">dl-de/zero-2-0</a>).
+        Zensus 2022, Durchschnittliche Nettokaltmiete, 100 m grid © Statistische Ämter des Bundes und der Länder (open data, attribution).
+        3D buildings: 3D-Gebäudemodelle LoD2 © Geoportal Berlin (<a href="https://www.govdata.de/dl-de/zero-2-0">dl-de/zero-2-0</a>), height = measured height.
+        Aerial photo: TrueDOP20 Sommer 2025 © Geoportal Berlin (<a href="https://www.govdata.de/dl-de/zero-2-0">dl-de/zero-2-0</a>).
+        Basemap © <a href="https://carto.com/attribution">CARTO</a>, © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
+      <p>Barış Parlatangiller · <a href="https://github.com/barisparlatangiller" id="repoLink">source &amp; method</a> · built with AI assistance (Claude, Anthropic)</p>
+    </footer>
+  </aside>
+</div>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@3.2.1/dist/pmtiles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

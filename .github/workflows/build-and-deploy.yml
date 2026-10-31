@@ -1,0 +1,86 @@
+name: Build data and deploy map
+
+# Downloads all inputs from the official sources, rebuilds docs/data
+# (addresses, 100 m rent cells, 3D LoD2 buildings) and publishes docs/ to GitHub Pages.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q tippecanoe
+          pip install -r requirements.txt
+
+      # ---------------------------------------------------------------- addresses + rent
+      - name: Download Mietspiegel Wohnlagen 2026 and Zensus 2022 rent
+        id: fetch
+        continue-on-error: true
+        run: python pipeline/fetch_inputs.py wohnlagen && python pipeline/fetch_inputs.py zensus
+
+      - name: Build address and rent layers
+        if: steps.fetch.outcome == 'success'
+        run: python pipeline/build_data.py --input input --out docs/data
+
+      # ---------------------------------------------------------------- 3D buildings
+      - name: Cache LoD2 tiles
+        uses: actions/cache@v4
+        with:
+          path: input/lod2
+          key: berlin-lod2-v1
+
+      - name: Download Berlin LoD2 building models
+        id: lod2
+        if: steps.fetch.outcome == 'success'
+        continue-on-error: true
+        run: python pipeline/fetch_inputs.py lod2
+
+      - name: Build 3D buildings (LoD2 footprints + measured height)
+        if: steps.lod2.outcome == 'success'
+        continue-on-error: true
+        run: |
+          python pipeline/lod2_to_footprints.py --lod2 input/lod2 --out input/berlin_lod2.parquet
+          python pipeline/build_buildings.py --input input --buildings input/berlin_lod2.parquet --height-field h --out docs/data
+
+      - name: Summary
+        run: |
+          ls -lh docs/data
+          python -c "import json;s=json.load(open('docs/data/stats.json'));print(json.dumps({k:s[k] for k in s if k!='districts'},indent=1))"
+
+      # ---------------------------------------------------------------- publish
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

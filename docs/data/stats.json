@@ -1,0 +1,738 @@
+{
+ "berlin": {
+  "n": 360000,
+  "n_wfs": 400505,
+  "with_rent": 0.681,
+  "terciles": [
+   7.09,
+   8.36
+  ],
+  "by_label": [
+   {
+    "label": "einfach",
+    "n": 108950,
+    "share": 0.303,
+    "mean": 7.32,
+    "median": 7.11,
+    "p25": 6.33,
+    "p75": 7.96
+   },
+   {
+    "label": "mittel",
+    "n": 175073,
+    "share": 0.486,
+    "mean": 7.96,
+    "median": 7.71,
+    "p25": 6.79,
+    "p75": 8.77
+   },
+   {
+    "label": "gut",
+    "n": 75977,
+    "share": 0.211,
+    "mean": 8.84,
+    "median": 8.51,
+    "p25": 7.6,
+    "p75": 9.63
+   }
+  ],
+  "matrix_addresses": [
+   [
+    37408,
+    25539,
+    13837
+   ],
+   [
+    36005,
+    38353,
+    36866
+   ],
+   [
+    8350,
+    17760,
+    31221
+   ]
+  ],
+  "score_addresses": {
+   "-2": 8350,
+   "-1": 53765,
+   "0": 106982,
+   "1": 62405,
+   "2": 13837
+  },
+  "cells": 27436,
+  "score_cells": {
+   "-2": 1047,
+   "-1": 6216,
+   "0": 12343,
+   "1": 6347,
+   "2": 1483
+  }
+ },
+ "districts": [
+  {
+   "name": "Charlottenburg-Wilmersdorf",
+   "addresses": 22760,
+   "with_rent": 19626,
+   "mean_rent": 8.62,
+   "share_einfach": 0.095,
+   "share_mittel": 0.325,
+   "share_gut": 0.58,
+   "mean_score": -0.185,
+   "share_cheaper": 0.32,
+   "share_as_label": 0.499,
+   "share_pricier": 0.182,
+   "bbox": [
+    [
+     13.2107,
+     52.4672
+    ],
+    [
+     13.3407,
+     52.5478
+    ]
+   ]
+  },
+  {
+   "name": "Steglitz-Zehlendorf",
+   "addresses": 46291,
+   "with_rent": 36076,
+   "mean_rent": 8.59,
+   "share_einfach": 0.014,
+   "share_mittel": 0.519,
+   "share_gut": 0.467,
+   "mean_score": -0.166,
+   "share_cheaper": 0.323,
+   "share_as_label": 0.465,
+   "share_pricier": 0.213,
+   "bbox": [
+    [
+     13.127,
+     52.3874
+    ],
+    [
+     13.371,
+     52.4703
+    ]
+   ]
+  },
+  {
+   "name": "Marzahn-Hellersdorf",
+   "addresses": 32443,
+   "with_rent": 15248,
+   "mean_rent": 7.26,
+   "share_einfach": 0.232,
+   "share_mittel": 0.534,
+   "share_gut": 0.233,
+   "mean_score": -0.102,
+   "share_cheaper": 0.277,
+   "share_as_label": 0.53,
+   "share_pricier": 0.193,
+   "bbox": [
+    [
+     13.5187,
+     52.4708
+    ],
+    [
+     13.6577,
+     52.5738
+    ]
+   ]
+  },
+  {
+   "name": "Pankow",
+   "addresses": 36250,
+   "with_rent": 21044,
+   "mean_rent": 8.11,
+   "share_einfach": 0.114,
+   "share_mittel": 0.727,
+   "share_gut": 0.159,
+   "mean_score": -0.051,
+   "share_cheaper": 0.302,
+   "share_as_label": 0.425,
+   "share_pricier": 0.272,
+   "bbox": [
+    [
+     13.35,
+     52.5203
+    ],
+    [
+     13.5215,
+     52.652
+    ]
+   ]
+  },
+  {
+   "name": "Tempelhof-Schöneberg",
+   "addresses": 35308,
+   "with_rent": 27208,
+   "mean_rent": 7.66,
+   "share_einfach": 0.278,
+   "share_mittel": 0.629,
+   "share_gut": 0.093,
+   "mean_score": 0.045,
+   "share_cheaper": 0.291,
+   "share_as_label": 0.405,
+   "share_pricier": 0.304,
+   "bbox": [
+    [
+     13.3201,
+     52.3763
+    ],
+    [
+     13.4273,
+     52.5047
+    ]
+   ]
+  },
+  {
+   "name": "Lichtenberg",
+   "addresses": 18270,
+   "with_rent": 11844,
+   "mean_rent": 7.6,
+   "share_einfach": 0.378,
+   "share_mittel": 0.564,
+   "share_gut": 0.058,
+   "mean_score": 0.056,
+   "share_cheaper": 0.3,
+   "share_as_label": 0.398,
+   "share_pricier": 0.303,
+   "bbox": [
+    [
+     13.4572,
+     52.4708
+    ],
+    [
+     13.5668,
+     52.5911
+    ]
+   ]
+  },
+  {
+   "name": "Friedrichshain-Kreuzberg",
+   "addresses": 9950,
+   "with_rent": 9192,
+   "mean_rent": 8.18,
+   "share_einfach": 0.317,
+   "share_mittel": 0.386,
+   "share_gut": 0.297,
+   "mean_score": 0.126,
+   "share_cheaper": 0.223,
+   "share_as_label": 0.471,
+   "share_pricier": 0.306,
+   "bbox": [
+    [
+     13.3688,
+     52.4829
+    ],
+    [
+     13.4786,
+     52.5294
+    ]
+   ]
+  },
+  {
+   "name": "Reinickendorf",
+   "addresses": 41608,
+   "with_rent": 27549,
+   "mean_rent": 7.78,
+   "share_einfach": 0.357,
+   "share_mittel": 0.453,
+   "share_gut": 0.19,
+   "mean_score": 0.137,
+   "share_cheaper": 0.253,
+   "share_as_label": 0.395,
+   "share_pricier": 0.353,
+   "bbox": [
+    [
+     13.2036,
+     52.549
+    ],
+    [
+     13.3879,
+     52.6601
+    ]
+   ]
+  },
+  {
+   "name": "Treptow-Köpenick",
+   "addresses": 35274,
+   "with_rent": 19774,
+   "mean_rent": 7.72,
+   "share_einfach": 0.426,
+   "share_mittel": 0.511,
+   "share_gut": 0.063,
+   "mean_score": 0.161,
+   "share_cheaper": 0.285,
+   "share_as_label": 0.345,
+   "share_pricier": 0.369,
+   "bbox": [
+    [
+     13.4401,
+     52.34
+    ],
+    [
+     13.7563,
+     52.4972
+    ]
+   ]
+  },
+  {
+   "name": "Mitte",
+   "addresses": 16760,
+   "with_rent": 15123,
+   "mean_rent": 8.45,
+   "share_einfach": 0.522,
+   "share_mittel": 0.136,
+   "share_gut": 0.342,
+   "mean_score": 0.284,
+   "share_cheaper": 0.13,
+   "share_as_label": 0.495,
+   "share_pricier": 0.376,
+   "bbox": [
+    [
+     13.3062,
+     52.499
+    ],
+    [
+     13.4284,
+     52.5674
+    ]
+   ]
+  },
+  {
+   "name": "Spandau",
+   "addresses": 33994,
+   "with_rent": 20970,
+   "mean_rent": 7.66,
+   "share_einfach": 0.475,
+   "share_mittel": 0.387,
+   "share_gut": 0.137,
+   "mean_score": 0.3,
+   "share_cheaper": 0.163,
+   "share_as_label": 0.432,
+   "share_pricier": 0.405,
+   "bbox": [
+    [
+     13.1112,
+     52.4426
+    ],
+    [
+     13.2816,
+     52.5802
+    ]
+   ]
+  },
+  {
+   "name": "Neukölln",
+   "addresses": 31092,
+   "with_rent": 21685,
+   "mean_rent": 7.56,
+   "share_einfach": 0.637,
+   "share_mittel": 0.363,
+   "share_gut": 0.0,
+   "mean_score": 0.519,
+   "share_cheaper": 0.097,
+   "share_as_label": 0.42,
+   "share_pricier": 0.483,
+   "bbox": [
+    [
+     13.3997,
+     52.398
+    ],
+    [
+     13.5231,
+     52.4958
+    ]
+   ]
+  }
+ ],
+ "plr_cheaper": [
+  {
+   "bezirk": "Treptow-Köpenick",
+   "planungsraum": "Alt-Friedrichshagen",
+   "addresses": 1835,
+   "with_rent": 1653,
+   "mean_rent": 7.517,
+   "share_einfach": 0.0,
+   "share_mittel": 0.086,
+   "share_gut": 0.914,
+   "mean_score": -1.106,
+   "share_cheaper": 0.754,
+   "share_as_label": 0.239,
+   "share_pricier": 0.007,
+   "bbox": [
+    [
+     13.617,
+     52.4446
+    ],
+    [
+     13.6515,
+     52.4595
+    ]
+   ]
+  },
+  {
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "planungsraum": "Breite Straße",
+   "addresses": 638,
+   "with_rent": 584,
+   "mean_rent": 7.815,
+   "share_einfach": 0.0,
+   "share_mittel": 0.0,
+   "share_gut": 1.0,
+   "mean_score": -1.045,
+   "share_cheaper": 0.632,
+   "share_as_label": 0.368,
+   "share_pricier": 0.0,
+   "bbox": [
+    [
+     13.2897,
+     52.468
+    ],
+    [
+     13.3064,
+     52.477
+    ]
+   ]
+  },
+  {
+   "bezirk": "Spandau",
+   "planungsraum": "Kafkastraße",
+   "addresses": 1338,
+   "with_rent": 590,
+   "mean_rent": 7.865,
+   "share_einfach": 0.0,
+   "share_mittel": 0.0,
+   "share_gut": 1.0,
+   "mean_score": -1.044,
+   "share_cheaper": 0.607,
+   "share_as_label": 0.393,
+   "share_pricier": 0.0,
+   "bbox": [
+    [
+     13.1112,
+     52.4435
+    ],
+    [
+     13.1446,
+     52.4538
+    ]
+   ]
+  },
+  {
+   "bezirk": "Marzahn-Hellersdorf",
+   "planungsraum": "Cecilienplatz",
+   "addresses": 261,
+   "with_rent": 256,
+   "mean_rent": 5.671,
+   "share_einfach": 0.0,
+   "share_mittel": 1.0,
+   "share_gut": 0.0,
+   "mean_score": -1.0,
+   "share_cheaper": 1.0,
+   "share_as_label": 0.0,
+   "share_pricier": 0.0,
+   "bbox": [
+    [
+     13.5898,
+     52.5176
+    ],
+    [
+     13.5962,
+     52.5249
+    ]
+   ]
+  },
+  {
+   "bezirk": "Treptow-Köpenick",
+   "planungsraum": "Allende II",
+   "addresses": 89,
+   "with_rent": 73,
+   "mean_rent": 5.65,
+   "share_einfach": 0.0,
+   "share_mittel": 1.0,
+   "share_gut": 0.0,
+   "mean_score": -0.973,
+   "share_cheaper": 0.986,
+   "share_as_label": 0.0,
+   "share_pricier": 0.014,
+   "bbox": [
+    [
+     13.592,
+     52.438
+    ],
+    [
+     13.6063,
+     52.4416
+    ]
+   ]
+  },
+  {
+   "bezirk": "Lichtenberg",
+   "planungsraum": "Karlshorst West",
+   "addresses": 717,
+   "with_rent": 641,
+   "mean_rent": 7.882,
+   "share_einfach": 0.0,
+   "share_mittel": 0.107,
+   "share_gut": 0.893,
+   "mean_score": -0.945,
+   "share_cheaper": 0.722,
+   "share_as_label": 0.254,
+   "share_pricier": 0.023,
+   "bbox": [
+    [
+     13.513,
+     52.4819
+    ],
+    [
+     13.5276,
+     52.4932
+    ]
+   ]
+  },
+  {
+   "bezirk": "Lichtenberg",
+   "planungsraum": "Volkradstraße",
+   "addresses": 357,
+   "with_rent": 308,
+   "mean_rent": 6.524,
+   "share_einfach": 0.0,
+   "share_mittel": 1.0,
+   "share_gut": 0.0,
+   "mean_score": -0.945,
+   "share_cheaper": 0.945,
+   "share_as_label": 0.055,
+   "share_pricier": 0.0,
+   "bbox": [
+    [
+     13.4969,
+     52.496
+    ],
+    [
+     13.5154,
+     52.5048
+    ]
+   ]
+  },
+  {
+   "bezirk": "Marzahn-Hellersdorf",
+   "planungsraum": "Teterower Ring",
+   "addresses": 475,
+   "with_rent": 428,
+   "mean_rent": 5.76,
+   "share_einfach": 0.0,
+   "share_mittel": 1.0,
+   "share_gut": 0.0,
+   "mean_score": -0.918,
+   "share_cheaper": 0.928,
+   "share_as_label": 0.063,
+   "share_pricier": 0.009,
+   "bbox": [
+    [
+     13.5759,
+     52.5139
+    ],
+    [
+     13.5883,
+     52.5246
+    ]
+   ]
+  }
+ ],
+ "plr_pricier": [
+  {
+   "bezirk": "Spandau",
+   "planungsraum": "Haveleck",
+   "addresses": 565,
+   "with_rent": 316,
+   "mean_rent": 8.965,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.883,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.0,
+   "share_pricier": 1.0,
+   "bbox": [
+    [
+     13.2235,
+     52.549
+    ],
+    [
+     13.2375,
+     52.5598
+    ]
+   ]
+  },
+  {
+   "bezirk": "Treptow-Köpenick",
+   "planungsraum": "Falkenberg",
+   "addresses": 684,
+   "with_rent": 391,
+   "mean_rent": 9.451,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.586,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.13,
+   "share_pricier": 0.87,
+   "bbox": [
+    [
+     13.5551,
+     52.4002
+    ],
+    [
+     13.5734,
+     52.415
+    ]
+   ]
+  },
+  {
+   "bezirk": "Friedrichshain-Kreuzberg",
+   "planungsraum": "Am Berlin Museum",
+   "addresses": 226,
+   "with_rent": 199,
+   "mean_rent": 8.6,
+   "share_einfach": 0.947,
+   "share_mittel": 0.04,
+   "share_gut": 0.013,
+   "mean_score": 1.457,
+   "share_cheaper": 0.015,
+   "share_as_label": 0.08,
+   "share_pricier": 0.905,
+   "bbox": [
+    [
+     13.3952,
+     52.4985
+    ],
+    [
+     13.4045,
+     52.509
+    ]
+   ]
+  },
+  {
+   "bezirk": "Spandau",
+   "planungsraum": "An der Tränke",
+   "addresses": 601,
+   "with_rent": 318,
+   "mean_rent": 8.57,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.384,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.06,
+   "share_pricier": 0.94,
+   "bbox": [
+    [
+     13.1283,
+     52.5463
+    ],
+    [
+     13.1437,
+     52.5538
+    ]
+   ]
+  },
+  {
+   "bezirk": "Spandau",
+   "planungsraum": "Zitadellenweg",
+   "addresses": 640,
+   "with_rent": 245,
+   "mean_rent": 8.559,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.38,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.024,
+   "share_pricier": 0.976,
+   "bbox": [
+    [
+     13.2107,
+     52.5349
+    ],
+    [
+     13.2457,
+     52.554
+    ]
+   ]
+  },
+  {
+   "bezirk": "Treptow-Köpenick",
+   "planungsraum": "Karolinenhof",
+   "addresses": 669,
+   "with_rent": 208,
+   "mean_rent": 8.503,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.332,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.173,
+   "share_pricier": 0.827,
+   "bbox": [
+    [
+     13.6285,
+     52.3843
+    ],
+    [
+     13.6421,
+     52.3973
+    ]
+   ]
+  },
+  {
+   "bezirk": "Mitte",
+   "planungsraum": "Beusselkiez",
+   "addresses": 208,
+   "with_rent": 207,
+   "mean_rent": 8.558,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.271,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.053,
+   "share_pricier": 0.947,
+   "bbox": [
+    [
+     13.3243,
+     52.5246
+    ],
+    [
+     13.3284,
+     52.5327
+    ]
+   ]
+  },
+  {
+   "bezirk": "Mitte",
+   "planungsraum": "Huttenkiez",
+   "addresses": 285,
+   "with_rent": 157,
+   "mean_rent": 7.895,
+   "share_einfach": 1.0,
+   "share_mittel": 0.0,
+   "share_gut": 0.0,
+   "mean_score": 1.242,
+   "share_cheaper": 0.0,
+   "share_as_label": 0.102,
+   "share_pricier": 0.898,
+   "bbox": [
+    [
+     13.3147,
+     52.5221
+    ],
+    [
+     13.3585,
+     52.5403
+    ]
+   ]
+  }
+ ]
+}

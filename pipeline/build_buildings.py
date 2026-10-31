@@ -106,7 +106,7 @@ def main():
     meta["cx"] = (np.floor(ex / 100) * 100 + 50).astype(int)
     meta["cy"] = (np.floor(ny / 100) * 100 + 50).astype(int)
     meta = meta.merge(load_rent(args.input), on=["cx", "cy"], how="left")
-    meta["gitter_id"] = gitter_id(meta.cx, meta.cy)
+    meta["gitter_id"] = gitter_id(meta["cx"].values, meta["cy"].values)
     stats = json.load(open(out / "stats.json", encoding="utf-8"))
     q1, q2 = stats["berlin"]["terciles"]
     meta["R"] = band(meta["rent"], q1, q2)

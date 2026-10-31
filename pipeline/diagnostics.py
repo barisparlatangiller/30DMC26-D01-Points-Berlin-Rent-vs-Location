@@ -16,6 +16,7 @@ for f in sorted(OUT.iterdir()):
 st = json.load(open(OUT / "stats.json", encoding="utf-8"))
 d["addresses"] = st["berlin"]["n"]; d["addresses_wfs"] = st["berlin"]["n_wfs"]
 d["buildings"] = st.get("buildings")
+d["berlin"] = {k: st["berlin"][k] for k in ("with_rent", "terciles", "by_label", "score_addresses", "score_cells", "cells")}
 
 w = {}
 try:

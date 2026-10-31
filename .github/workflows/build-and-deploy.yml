@@ -79,6 +79,21 @@ jobs:
           python pipeline/diagnostics.py docs/data 2>&1 | tee logs/06_diagnostics.log
           { echo '```json'; cat docs/data/diagnostics.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Report (annotations readable via the API)
+        if: always()
+        run: |
+          python - <<'PY'
+          import glob, json, os
+          def note(title, text):
+              text = text[-3500:].replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+              print(f"::notice title={title}::{text}")
+          for f in sorted(glob.glob("logs/*.log")):
+              lines = [l for l in open(f, errors="replace").read().splitlines() if l.strip()]
+              note(os.path.basename(f), "\n".join(lines[-25:]))
+          if os.path.exists("docs/data/diagnostics.json"):
+              note("diagnostics", json.dumps(json.load(open("docs/data/diagnostics.json")), separators=(",", ":")))
+          PY
+
       - name: Upload build logs
         if: always()
         uses: actions/upload-artifact@v4

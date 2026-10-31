@@ -223,3 +223,6 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
   .op { display: none; }
   .intro { left: 50%; }
 }
+.seg.mini3 { display: grid; grid-template-columns: repeat(3, auto); gap: 3px; background: var(--chip); padding: 3px; border-radius: 12px; margin: 0; }
+.seg.mini3 button { padding: 6px 11px; font-size: 12.5px; white-space: nowrap; }
+.seg.mini3 button:disabled { opacity: .4; cursor: not-allowed; }

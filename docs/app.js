@@ -31,11 +31,12 @@
   const pm = new pmtiles.Protocol();
   maplibregl.addProtocol("pmtiles", pm.tile);
   const head = (u) => fetch(u, { method: "HEAD" }).then((r) => r.ok).catch(() => false);
-  const [A, STATS, hasB, hasBcsv] = await Promise.all([
+  const [A, STATS, hasB, hasBcsv, DIAG] = await Promise.all([
     fetch("data/addresses.json").then((r) => r.json()),
     fetch("data/stats.json").then((r) => r.json()),
     head("data/buildings.pmtiles"),
     head("data/scores_buildings.csv.zip"),
+    fetch("data/diagnostics.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
   const B = STATS.berlin, [q1, q2] = B.terciles, N = A.lon.length;
   const levelR = (r) => (r == null ? null : r < q1 ? 1 : r < q2 ? 2 : 3);
@@ -44,7 +45,7 @@
   for (let i = 0; i < N; i++) {
     const L = A.c[i] + 1, R = levelR(A.r[i]);
     const p = { L };
-    if (R) { p.R = R; p.s = R - L; }
+    if (R) { p.R = R; p.s = R - L; p.r = A.r[i]; }
     feats[i] = { type: "Feature", id: i, properties: p, geometry: { type: "Point", coordinates: [A.lon[i] / 1e5, A.lat[i] / 1e5] } };
   }
 
@@ -58,7 +59,7 @@
   });
   map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "bottom-right");
 
-  let mode = "score", sel = null, opac = 0.85, b3d = false;
+  let mode = "score", view = "points", sel = null, opac = 0.85;
 
   const scoreExpr = (key = "s") => ["match", ["get", key], -2, SCORE["-2"].c, -1, SCORE["-1"].c, 0, SCORE["0"].c, 1, SCORE["1"].c, 2, SCORE["2"].c, GREY];
   const rentExpr = ["interpolate", ["linear"], ["get", "r"], ...RENT.flat()];
@@ -72,7 +73,7 @@
     map.addLayer({ id: "cells", type: "fill", source: "cells", paint: { "fill-color": scoreExpr(), "fill-opacity": 0.8 } }, firstSymbol);
     map.addLayer({ id: "dots", type: "circle", source: "addr", paint: {
       "circle-color": scoreExpr(),
-      "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 0.5, 12, 1.2, 14, 2.4, 16, 4.5, 18, 7],
+      "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 0.8, 11, 1.3, 13, 2.2, 15, 3.6, 17, 6, 19, 9],
       "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 14, 0, 16, 0.8],
       "circle-stroke-color": dark ? "#161513" : "#fdfbf7" } });
     if (hasB) {
@@ -81,8 +82,8 @@
         layout: { visibility: "none" },
         paint: { "fill-extrusion-height": ["get", "h"], "fill-extrusion-opacity": 0.92, "fill-extrusion-vertical-gradient": true } });
     } else {
-      $("#b3dBtn").disabled = true;
-      $("#b3dBtn").title = "3D buildings are created by the GitHub Action (LoD2)";
+      $("#v3d").disabled = true;
+      $("#v3d").title = "3D buildings are created by the GitHub Action (LoD2)";
     }
     map.addLayer({ id: "hl", type: "circle", source: "addr", filter: ["==", ["id"], -1],
       paint: { "circle-radius": 10, "circle-color": "rgba(0,0,0,0)", "circle-stroke-width": 3, "circle-stroke-color": dark ? "#fff" : "#2b2925" } });
@@ -106,23 +107,25 @@
     if (!map.getLayer("cells")) return;
     const f = filters();
     map.setPaintProperty("cells", "fill-color", mode === "rent" ? rentExpr : mode === "label" ? labelExpr("L", 1) : scoreExpr());
-    map.setPaintProperty("cells", "fill-opacity", mode === "label" ? 0 : b3d ? opac * 0.35 : opac);
+    map.setLayoutProperty("cells", "visibility", view === "points" ? "none" : "visible");
+    map.setPaintProperty("cells", "fill-opacity", view === "3d" ? opac * 0.3 : mode === "label" ? opac * 0.9 : opac);
     map.setFilter("cells", f.cells);
-    const dotsOn = $("#dotsTog").checked;
-    map.setLayoutProperty("dots", "visibility", dotsOn ? "visible" : "none");
-    map.setPaintProperty("dots", "circle-color", mode === "label" ? labelExpr("L", 1) : mode === "rent" ? "#2b2925" : scoreExpr());
-    map.setPaintProperty("dots", "circle-opacity", mode === "rent" ? 0.35 * opac : Math.min(1, opac + 0.1));
+    map.setLayoutProperty("dots", "visibility", view === "points" ? "visible" : "none");
+    map.setPaintProperty("dots", "circle-color", mode === "label" ? labelExpr("L", 1)
+      : mode === "rent" ? ["case", ["has", "r"], rentExpr, GREY] : scoreExpr());
+    map.setPaintProperty("dots", "circle-opacity", Math.min(1, opac + 0.1));
     map.setFilter("dots", f.dots);
     if (map.getLayer("bld")) {
-      map.setLayoutProperty("bld", "visibility", b3d ? "visible" : "none");
+      map.setLayoutProperty("bld", "visibility", view === "3d" ? "visible" : "none");
       map.setPaintProperty("bld", "fill-extrusion-color", mode === "rent"
         ? ["case", ["has", "r"], rentExpr, GREY] : mode === "label" ? labelExpr("l", 0) : scoreExpr());
       map.setPaintProperty("bld", "fill-extrusion-opacity", Math.max(0.5, opac));
       map.setFilter("bld", f.bld);
     }
     document.querySelectorAll("#modeSeg button").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
+    document.querySelectorAll("#viewSeg button").forEach((b) => b.classList.toggle("on", b.dataset.view === view));
     $("#modeHint").innerHTML = {
-      score: "Pink: the block is <b>cheaper</b> than its label suggests. Teal: <b>pricier</b>. Grey: they match.",
+      score: "Pink: rent <b>cheaper</b> than the label suggests. Teal: <b>pricier</b>. Grey: they match.",
       label: "Official location label of every address (Berliner Mietspiegel 2026).",
       rent: "Average net rent per m² of existing tenancies in each 100 m block (Zensus 2022).",
     }[mode];
@@ -130,24 +133,27 @@
   }
 
   $("#modeSeg").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { mode = b.dataset.mode; render(); } });
-  $("#dotsTog").addEventListener("change", render);
   $("#opac").addEventListener("input", (e) => { opac = e.target.value / 100; render(); });
 
   // ------------------------------------------------ 3D + aerial photo
-  $("#b3dBtn").addEventListener("click", () => {
-    b3d = !b3d;
-    $("#b3dBtn").classList.toggle("on", b3d); $("#b3dBtn").setAttribute("aria-pressed", b3d);
-    if (b3d) {
-      $("#dotsTog").checked = false;
-      map.easeTo({ pitch: 60, bearing: -17, zoom: Math.max(map.getZoom(), 15), duration: 1400 });
-    } else {
-      map.easeTo({ pitch: 0, bearing: 0, duration: 900 });
-    }
+  $("#viewSeg").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b || b.disabled) return;
+    const was = view; view = b.dataset.view;
+    if (view === "3d" && was !== "3d") map.easeTo({ pitch: 60, bearing: -17, zoom: Math.max(map.getZoom(), 15), duration: 1400 });
+    if (view !== "3d" && was === "3d") map.easeTo({ pitch: 0, bearing: 0, duration: 900 });
     render();
   });
 
   const SAT_WMS = "https://gdi.berlin.de/services/wms/truedop_2025_sommer";
   async function satTiles() {
+    const w = DIAG.wms;                     // checked by the GitHub Action: layer name + CORS
+    if (w && w.layer && w.cors) {
+      return { tiles: [`${SAT_WMS}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=${encodeURIComponent(w.layer)}&STYLES=&FORMAT=image/jpeg&CRS=EPSG:3857&WIDTH=512&HEIGHT=512&BBOX={bbox-epsg-3857}`],
+        tileSize: 512, maxzoom: 20, attribution: "Luftbild TrueDOP20 Sommer 2025 © Geoportal Berlin (dl-de/zero-2-0)" };
+    }
+    const esri = { tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
+      tileSize: 256, maxzoom: 19, attribution: "Imagery © Esri, Maxar, Earthstar Geographics" };
+    if (w && w.cors === false) return esri;
     try {
       const t = await fetch(`${SAT_WMS}?SERVICE=WMS&REQUEST=GetCapabilities`).then((r) => { if (!r.ok) throw 0; return r.text(); });
       const names = [...t.matchAll(/<Layer[^>]*>\s*<Name>([^<]+)<\/Name>/g)].map((m) => m[1]);
@@ -156,8 +162,7 @@
       return { tiles: [`${SAT_WMS}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=${encodeURIComponent(name)}&STYLES=&FORMAT=image/jpeg&CRS=EPSG:3857&WIDTH=512&HEIGHT=512&BBOX={bbox-epsg-3857}`],
         tileSize: 512, maxzoom: 20, attribution: "Luftbild TrueDOP20 Sommer 2025 © Geoportal Berlin (dl-de/zero-2-0)" };
     } catch {
-      return { tiles: ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
-        tileSize: 256, maxzoom: 19, attribution: "Imagery © Esri, Maxar, Earthstar Geographics" };
+      return esri;
     }
   }
   $("#baseSeg").addEventListener("click", async (e) => {
@@ -189,7 +194,7 @@
       h = `<div class="lg-title">Score: rent level − label level</div><div class="lg-sub">Does the block's rent match its official label?</div>
         ${["-2", "-1", "0", "1", "2"].map((k) => `<div class="lg-row"><i class="sq" style="background:${SCORE[k].c}"></i><span class="mono sc">${+k > 0 ? "+" + k : k}</span>${SCORE[k].t}</div>`).join("")}`;
     }
-    if (b3d) h += `<div class="lg-row lg-note"><i class="sq" style="background:${GREY}"></i><small>Building without label or rent · height = LoD2 measured height</small></div>`;
+    if (view === "3d") h += `<div class="lg-row lg-note"><i class="sq" style="background:${GREY}"></i><small>Building without label or rent · height = LoD2 measured height</small></div>`;
     if (sel) h += `<div class="lg-sel">Showing only: <b>${LABELS[sel.L - 1].en}</b> label × <b>${LEVEL_R[sel.R]}</b> <button id="lgClear">show all</button></div>`;
     $("#legend").innerHTML = h;
     $("#lgClear")?.addEventListener("click", () => { sel = null; render(); });
@@ -302,7 +307,7 @@
   function showAddr(i, fly) {
     const ll = [A.lon[i] / 1e5, A.lat[i] / 1e5];
     map.setFilter("hl", ["==", ["id"], i]);
-    if (fly) map.flyTo({ center: ll, zoom: b3d ? 17 : 16.5, speed: 1.6 });
+    if (fly) map.flyTo({ center: ll, zoom: view === "3d" ? 17 : 16.5, speed: 1.6 });
     popup.setLngLat(ll).setHTML(addrHTML(i)).addTo(map);
     detailCard(i);
   }
@@ -311,7 +316,7 @@
     const box = [[pt.x - r, pt.y - r], [pt.x + r, pt.y + r]];
     if (visible("dots")) { const f = map.queryRenderedFeatures(box, { layers: ["dots"] })[0]; if (f) return { k: "a", f }; }
     if (visible("bld")) { const f = map.queryRenderedFeatures(pt, { layers: ["bld"] })[0]; if (f) return { k: "b", f }; }
-    if (mode !== "label") { const f = map.queryRenderedFeatures(pt, { layers: ["cells"] })[0]; if (f) return { k: "c", f }; }
+    if (visible("cells")) { const f = map.queryRenderedFeatures(pt, { layers: ["cells"] })[0]; if (f) return { k: "c", f }; }
     return null;
   }
   map.on("click", (e) => {

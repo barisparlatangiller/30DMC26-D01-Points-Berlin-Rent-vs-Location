@@ -38,11 +38,16 @@ jobs:
       - name: Download Mietspiegel Wohnlagen 2026 and Zensus 2022 rent
         id: fetch
         continue-on-error: true
-        run: python pipeline/fetch_inputs.py wohnlagen && python pipeline/fetch_inputs.py zensus
+        run: |
+          mkdir -p logs
+          (python pipeline/fetch_inputs.py wohnlagen && python pipeline/fetch_inputs.py zensus) 2>&1 | tee logs/01_fetch.log
+          test ${PIPESTATUS[0]} -eq 0
 
       - name: Build address and rent layers
         if: steps.fetch.outcome == 'success'
-        run: python pipeline/build_data.py --input input --out docs/data
+        run: |
+          python pipeline/build_data.py --input input --out docs/data 2>&1 | tee logs/02_build_data.log
+          test ${PIPESTATUS[0]} -eq 0
 
       # ---------------------------------------------------------------- 3D buildings
       - name: Cache LoD2 tiles
@@ -55,19 +60,35 @@ jobs:
         id: lod2
         if: steps.fetch.outcome == 'success'
         continue-on-error: true
-        run: python pipeline/fetch_inputs.py lod2
+        run: |
+          mkdir -p logs
+          python pipeline/fetch_inputs.py lod2 2>&1 | tee logs/03_fetch_lod2.log
+          test ${PIPESTATUS[0]} -eq 0
 
       - name: Build 3D buildings (LoD2 footprints + measured height)
         if: steps.lod2.outcome == 'success'
         continue-on-error: true
         run: |
-          python pipeline/lod2_to_footprints.py --lod2 input/lod2 --out input/berlin_lod2.parquet
-          python pipeline/build_buildings.py --input input --buildings input/berlin_lod2.parquet --height-field h --out docs/data
+          set -o pipefail
+          python pipeline/lod2_to_footprints.py --lod2 input/lod2 --out input/berlin_lod2.parquet 2>&1 | tee logs/04_lod2.log
+          python pipeline/build_buildings.py --input input --buildings input/berlin_lod2.parquet --height-field h --out docs/data 2>&1 | tee logs/05_buildings.log
 
-      - name: Summary
+      - name: Diagnostics (data summary + aerial photo service check)
         run: |
-          ls -lh docs/data
-          python -c "import json;s=json.load(open('docs/data/stats.json'));print(json.dumps({k:s[k] for k in s if k!='districts'},indent=1))"
+          mkdir -p logs
+          python pipeline/diagnostics.py docs/data 2>&1 | tee logs/06_diagnostics.log
+          { echo '```json'; cat docs/data/diagnostics.json; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            logs/
+            docs/data/stats.json
+            docs/data/diagnostics.json
+          if-no-files-found: ignore
 
       # ---------------------------------------------------------------- publish
       - uses: actions/configure-pages@v5

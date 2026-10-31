@@ -6,7 +6,7 @@
 
 #30DayMapChallenge 2026 · **Day 1 · Points**
 
-Berlin's rent index (*Mietspiegel*) sorts every residential address into a **simple**, **medium** or **good** location (*einfache / mittlere / gute Wohnlage*). This project sets **360,000 labelled addresses** from the Mietspiegel 2026 location map against the **average net rent** that tenants pay in each 100 m block (Zensus 2022).
+Berlin's rent index (*Mietspiegel*) sorts every residential address into a **simple**, **medium** or **good** location (*einfache / mittlere / gute Wohnlage*). This project sets **400,505 labelled addresses** from the Mietspiegel 2026 location map against the **average net rent** that tenants pay in each 100 m block (Zensus 2022).
 
 The interactive map (`docs/`, served via GitHub Pages) shows:
 
@@ -41,14 +41,14 @@ Score tables in `docs/data/` (also downloadable on the map):
 
 | Label | Addresses | Mean rent | Median | Middle half (P25–P75) |
 |---|---:|---:|---:|---:|
-| simple (einfach) | 108,950 | 7.32 €/m² | 7.11 | 6.33 – 7.96 |
-| medium (mittel) | 175,073 | 7.96 €/m² | 7.71 | 6.79 – 8.77 |
-| good (gut) | 75,977 | 8.84 €/m² | 8.51 | 7.60 – 9.63 |
+| simple (einfach) | 117,620 | 7.34 €/m² | 7.13 | 6.33 – 7.99 |
+| medium (mittel) | 200,341 | 7.94 €/m² | 7.70 | 6.78 – 8.76 |
+| good (gut) | 82,544 | 8.83 €/m² | 8.51 | 7.58 – 9.61 |
 
-* "Good" addresses pay on average **about 21 % more** than "simple" ones (+1.52 €/m²).
-* The ranges overlap strongly: a quarter of "good" addresses pay less than 7.60 €/m², a quarter of "simple" ones more than 7.96 €/m².
-* Of addresses with a published rent, **25 %** live in blocks cheaper than their label suggests, **44 %** as labelled and **31 %** pricier.
-* **1,047 blocks** are dominated by "good" labels but sit in Berlin's cheapest third of rents (score −2); **1,483 blocks** are mostly "simple" but sit in the most expensive third (score +2).
+* "Good" addresses pay on average **about 20 % more** than "simple" ones (+1.49 €/m²).
+* The ranges overlap strongly: a quarter of "good" addresses pay less than 7.58 €/m², a quarter of "simple" ones more than 7.99 €/m².
+* Of addresses with a published rent, **26 %** live in blocks cheaper than their label suggests, **43 %** as labelled and **31 %** pricier.
+* **1,080 blocks** are dominated by "good" labels but sit in Berlin's cheapest third of rents (score −2); **1,534 blocks** are mostly "simple" but sit in the most expensive third (score +2).
 
 ## Method
 
@@ -81,10 +81,10 @@ python pipeline/build_buildings.py --input input --buildings input/berlin_lod2.p
 ### Limitations
 
 * Zensus rent describes **existing tenancies on 15 May 2022**, not current asking rents; the location labels are from 2026.
-* Rent is suppressed in cells with few rented flats: **32 %** of addresses fall in a cell without a published value.
+* Rent is suppressed in cells with few rented flats: **33 %** of addresses fall in a cell without a published value.
 * The location label describes the wider residential surroundings, not a single building or flat.
 * This is a **spatial comparison of area-level data**. It makes no statement about individual flats, landlords or households.
-* The committed `docs/data` was built from 360,000 of 400,505 addresses (three manually downloaded WFS pages were duplicates). The GitHub Action downloads the full, sorted address list and rebuilds it.
+* All 400,505 addresses of the WFS are used; 1,028,063 LoD2 buildings are drawn, 325,174 of them carry a label (an address inside or within 10 m).
 * Building heights are LoD2 measured heights (generalised roof shapes); buildings are drawn as flat-roofed blocks.
 
 ## Structure
